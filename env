@@ -1,0 +1,16 @@
+#! /bin/sh
+
+I="/localstorage/cs3311/postgresql/17"
+PGDATA="/localstorage/$USER/pgsql/data"
+PGHOST="$PGDATA"
+LD_LIBRARY_PATH="$I/lib"
+PATH="$I/bin:$PATH"
+export PGDATA PGHOST LD_LIBRARY_PATH PATH
+
+# $I can be expanded at definition time as it is a constant.
+# shellcheck disable=2139
+alias p0="$I/bin/pg_ctl stop"
+
+# $PGDATA can be expanded at definition time as $USER should be a constant.
+# shellcheck disable=2139
+alias p1="$I/bin/pg_ctl -l $PGDATA/log start"
