@@ -1,0 +1,52 @@
+
+
+
+-- Set and Join Operations
+
+
+
+R union S
+
+select * from R  union  select * from S
+
+
+
+R intersect S
+
+select * from R  intersect  select * from S
+
+
+
+R except S
+
+select * from R  except  select * from S;
+
+
+
+R join S on a
+
+select * from R join S on R.a = S.a;
+
+
+
+R natural join S
+
+select * from R natural join S;
+
+
+
+R left outer join S
+
+select * from R left outer join S on R.a = S.a;
+
+
+
+R right outer join S
+
+select * from R right outer join S on R.a = S.a;
+
+
+
+R full outer join S
+
+select * from R full outer join S on R.a = S.a;

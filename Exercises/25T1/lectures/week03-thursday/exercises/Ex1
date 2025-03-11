@@ -1,0 +1,13 @@
+
+-- Find well-below-average students
+
+create or replace view
+   MarksWithAvg(course,student,mark,avg)
+as
+select course, student, mark,
+       avg(mark) OVER (PARTITION BY course)
+from   Enrolments;
+
+select student
+from   MarksWithAvg
+where  course = 'COMP2521' and mark < avg/2;

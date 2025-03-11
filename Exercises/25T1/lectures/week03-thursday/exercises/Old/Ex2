@@ -1,0 +1,27 @@
+
+Define views for ...
+
+
+define a view bb(brewery,nbeers)
+  to give a count of the number of beers made by each brewer
+
+create or replace view bb(brewery,nbeers)
+as
+select manf,count(beer) from Beers group by manf;
+
+
+define a view avgprice(bar,price)
+   to give average beer prices at each bar
+
+creeate or replace view avgprice(bar,price)
+as
+select bar, avg(price) from Sells group by bar;
+
+define a view liked(drinker,beers)
+   to give a list of beers liked by each drinker
+
+create or replace view liked(drinker,beers)
+as
+select drinker, string_agg(beer,', ')
+from   Likes
+group  by drinker;

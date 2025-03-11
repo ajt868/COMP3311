@@ -1,0 +1,13 @@
+
+-- Function to find the most expensive beer that a drinker likes
+
+create or replace function
+   priciest(_drinker text) returns text
+as $$
+select L.beer
+from   Likes L join Sells s on L.beer = s.beer
+where  L.drinker = _drinker
+       and s.price = (select max(ss.price)
+                      from   Likes LL join Sells ss on LL.beer = ss.beer
+                      where  LL.drinker = _drinker)
+$$ language sql;

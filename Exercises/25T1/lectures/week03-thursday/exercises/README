@@ -1,0 +1,7 @@
+Ex1 ... using MarksWithAvg view (demonstrates PARTITION)
+Ex2 ... various types of SQL set and join operations
+Ex3 ... the priciest(drinker) SQL function
+simple.sql ... database for Ex2
+bbd.dump ... Beers/Bars/Drinkers (BBD) database as used in lectures
+bbd2.dump ... version of BBD where entity tables have numeric IDs
+AllQueries ... solutions for Q1-21 on the BBD2 database

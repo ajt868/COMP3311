@@ -1,0 +1,88 @@
+-- COMP3311 Simple Beer DB Queries
+
+
+-- Q8. List of beers by each brewer
+
+create or replace view Q8(brewer,beers) as
+select manf, string_agg(name, '|' order by name)
+from   Beers
+group  by manf
+;
+
+-- Q9. Beers sold at bars where John drinks.
+
+create or replace view Q9x(beer) as
+select s.beer,s.bar,f.drinker
+from   Sells s join Frequents f on s.bar = f.bar
+;
+
+create or replace view Q9(beer) as
+select s.beer
+from   Sells s join Frequents f on s.bar = f.bar
+where  f.drinker = 'John'
+;
+
+-- Q10. Bars where either Gernot or John drink.
+
+create or replace  view Q10 as
+select bar from Frequents where drinker = 'Gernot'
+union
+select bar from Frequents where drinker = 'John'
+;
+
+create or replace q10x as
+select bar from Frequents where drinker = 'Gernot' or drinker = 'John'
+;
+
+-- Q11. Bars where both Gernot and John drink.
+
+create or replace  view Q11 as
+select bar from Frequents where drinker = 'Gernot'
+intersect
+select bar from Frequents where drinker = 'John'
+;
+
+create or replace q11x as
+select bar from Frequents where drinker = 'Gernot' and drinker = 'John'
+;
+
+-- Q12. Bars where John drinks but Gernot doesn't
+
+create or replace  view Q12 as
+select bar from Frequents where drinker = 'John'
+except
+select bar from Frequents where drinker = 'Gernot'
+;
+
+-- Q13. Find bars that serve New at the same price
+--      as the Coogee Bay Hotel charges for VB.
+
+create or replace view Q13x as
+select price from Sells where beer = 'VB' and bar = 'Coogee Bay Hotel'
+;
+
+create or replace view Q13 as
+select bar, price
+from   Sells
+where  beer = 'New' and price = (select price from Q13x);
+;
+
+-- Q14. Find the average price of common beers
+--      ("common" = served in more than two hotels).
+
+create or replace view Q14 as
+select beer, avg(price)::numeric(3,2)
+from   Sells
+group  by beer
+having count(bar) >= 2
+;
+
+-- Q15. Which bar sells 'New' cheapest?
+
+create or replace view Q15 as
+select bar
+from   Sells
+where  beer = 'New'
+       and price =  (select min(price) from Sells where beer = 'New')
+;
+

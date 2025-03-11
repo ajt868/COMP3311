@@ -1,0 +1,1553 @@
+2025-02-25 12:10:01.354 AEDT [526623] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-02-25 12:10:01.354 AEDT [526623] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-02-25 12:10:01.356 AEDT [526626] LOG:  database system was shut down at 2025-02-25 12:10:01 AEDT
+2025-02-25 12:10:01.358 AEDT [526623] LOG:  database system is ready to accept connections
+2025-02-25 12:10:01.446 AEDT [526623] LOG:  received fast shutdown request
+2025-02-25 12:10:01.446 AEDT [526623] LOG:  aborting any active transactions
+2025-02-25 12:10:01.446 AEDT [526623] LOG:  background worker "logical replication launcher" (PID 526629) exited with exit code 1
+2025-02-25 12:10:01.447 AEDT [526624] LOG:  shutting down
+2025-02-25 12:10:01.447 AEDT [526624] LOG:  checkpoint starting: shutdown immediate
+2025-02-25 12:10:01.448 AEDT [526624] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/14E44E8, redo lsn=0/14E44E8
+2025-02-25 12:10:01.450 AEDT [526623] LOG:  database system is shut down
+2025-03-01 19:50:40.732 AEDT [1279185] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-01 19:50:40.733 AEDT [1279185] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-01 19:50:40.734 AEDT [1279188] LOG:  database system was shut down at 2025-02-25 12:10:01 AEDT
+2025-03-01 19:50:40.736 AEDT [1279185] LOG:  database system is ready to accept connections
+2025-03-01 19:54:34.579 AEDT [1279934] FATAL:  database "z5477862" does not exist
+2025-03-01 19:55:40.738 AEDT [1279186] LOG:  checkpoint starting: time
+2025-03-01 19:56:51.643 AEDT [1279995] ERROR:  syntax error at or near "select" at character 42
+2025-03-01 19:56:51.643 AEDT [1279995] STATEMENT:  select * from Students where degree-3778
+	select * from Students where degree=3778;
+2025-03-01 19:56:54.785 AEDT [1279995] ERROR:  syntax error at or near "." at character 1
+2025-03-01 19:56:54.785 AEDT [1279995] STATEMENT:  .
+	select * from Students where degree-3778
+	select * from Students where degree=3778;
+2025-03-01 19:57:09.872 AEDT [1279995] ERROR:  argument of WHERE must be type boolean, not type integer at character 30
+2025-03-01 19:57:09.872 AEDT [1279995] STATEMENT:  select * from Students where degree-3778;
+2025-03-01 19:57:18.595 AEDT [1279186] LOG:  checkpoint complete: wrote 982 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=97.856 s, sync=0.002 s, total=97.858 s; sync files=318, longest=0.001 s, average=0.001 s; distance=4565 kB, estimate=4565 kB; lsn=0/1959990, redo lsn=0/1959900
+2025-03-01 20:08:53.755 AEDT [1281205] FATAL:  database "xyz" does not exist
+2025-03-01 20:08:55.678 AEDT [1281207] FATAL:  database "z5477862" does not exist
+2025-03-01 20:10:40.896 AEDT [1279186] LOG:  checkpoint starting: time
+2025-03-01 20:13:45.701 AEDT [1279186] LOG:  checkpoint complete: wrote 1852 buffers (11.3%); 0 WAL file(s) added, 0 removed, 1 recycled; write=184.801 s, sync=0.003 s, total=184.805 s; sync files=596, longest=0.001 s, average=0.001 s; distance=8496 kB, estimate=8496 kB; lsn=0/21A5A78, redo lsn=0/21A59E8
+2025-03-01 20:22:09.634 AEDT [1282640] ERROR:  syntax error at or near "select" at character 23
+2025-03-01 20:22:09.634 AEDT [1282640] STATEMENT:  select * from R
+	clear
+	select * from R
+	select * from R;
+2025-03-01 20:25:34.304 AEDT [1279186] LOG:  checkpoint starting: immediate force wait
+2025-03-01 20:25:34.305 AEDT [1279186] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=156 kB, estimate=7662 kB; lsn=0/21CCB28, redo lsn=0/21CCAD0
+2025-03-01 20:25:37.264 AEDT [1279186] LOG:  checkpoint starting: immediate force wait
+2025-03-01 20:25:37.265 AEDT [1279186] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=6896 kB; lsn=0/21CD100, redo lsn=0/21CD0A8
+2025-03-01 20:30:37.365 AEDT [1279186] LOG:  checkpoint starting: time
+2025-03-01 20:30:37.468 AEDT [1279186] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.101 s, sync=0.001 s, total=0.103 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=6206 kB; lsn=0/21CD298, redo lsn=0/21CD240
+2025-03-01 20:35:37.568 AEDT [1279186] LOG:  checkpoint starting: time
+2025-03-01 20:37:11.522 AEDT [1279186] LOG:  checkpoint complete: wrote 940 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=93.953 s, sync=0.002 s, total=93.955 s; sync files=308, longest=0.001 s, average=0.001 s; distance=4301 kB, estimate=6016 kB; lsn=0/2600C00, redo lsn=0/2600988
+2025-03-01 20:38:03.518 AEDT [1284778] ERROR:  operator does not exist: text == unknown at character 31
+2025-03-01 20:38:03.518 AEDT [1284778] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2025-03-01 20:38:03.518 AEDT [1284778] STATEMENT:  delete from student where name=='Arjun';
+2025-03-01 20:40:37.623 AEDT [1279186] LOG:  checkpoint starting: time
+2025-03-01 20:40:38.127 AEDT [1279186] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.502 s, sync=0.001 s, total=0.504 s; sync files=5, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=5414 kB; lsn=0/2600F38, redo lsn=0/2600EE0
+2025-03-01 21:59:07.537 AEDT [1279185] LOG:  received smart shutdown request
+2025-03-01 21:59:07.540 AEDT [1279185] LOG:  received SIGHUP, reloading configuration files
+2025-03-01 21:59:07.540 AEDT [1279185] LOG:  background worker "logical replication launcher" (PID 1279191) exited with exit code 1
+2025-03-01 21:59:07.541 AEDT [1279186] LOG:  shutting down
+2025-03-01 21:59:07.541 AEDT [1279186] LOG:  checkpoint starting: shutdown immediate
+2025-03-01 21:59:07.543 AEDT [1279186] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=4873 kB; lsn=0/2600FE8, redo lsn=0/2600FE8
+2025-03-01 21:59:07.550 AEDT [1279185] LOG:  database system is shut down
+2025-03-02 20:52:39.249 AEDT [61947] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-02 20:52:39.249 AEDT [61947] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-02 20:52:39.253 AEDT [61950] LOG:  database system was shut down at 2025-03-01 21:59:07 AEDT
+2025-03-02 20:52:39.258 AEDT [61947] LOG:  database system is ready to accept connections
+2025-03-02 20:54:29.070 AEDT [62020] ERROR:  syntax error at or near "select" at character 23
+2025-03-02 20:54:29.070 AEDT [62020] STATEMENT:  select * from dbpop()
+	select * from dbpop();
+2025-03-02 20:57:39.353 AEDT [61948] LOG:  checkpoint starting: time
+2025-03-02 20:59:17.815 AEDT [61948] LOG:  checkpoint complete: wrote 987 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=98.460 s, sync=0.002 s, total=98.463 s; sync files=335, longest=0.001 s, average=0.001 s; distance=4692 kB, estimate=4692 kB; lsn=0/2A96370, redo lsn=0/2A962E0
+2025-03-02 22:31:02.312 AEDT [61947] LOG:  received smart shutdown request
+2025-03-02 22:31:02.313 AEDT [61947] LOG:  received SIGHUP, reloading configuration files
+2025-03-02 22:31:02.316 AEDT [61947] LOG:  background worker "logical replication launcher" (PID 61953) exited with exit code 1
+2025-03-02 22:31:02.316 AEDT [61948] LOG:  shutting down
+2025-03-02 22:31:02.317 AEDT [61948] LOG:  checkpoint starting: shutdown immediate
+2025-03-02 22:31:02.318 AEDT [61948] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=4223 kB; lsn=0/2A96420, redo lsn=0/2A96420
+2025-03-02 22:31:02.324 AEDT [61947] LOG:  database system is shut down
+2025-03-03 12:33:15.959 AEDT [164618] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-03 12:33:15.960 AEDT [164618] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-03 12:33:15.961 AEDT [164621] LOG:  database system was shut down at 2025-03-02 22:31:02 AEDT
+2025-03-03 12:33:15.964 AEDT [164618] LOG:  database system is ready to accept connections
+2025-03-03 12:33:29.641 AEDT [164619] LOG:  checkpoint starting: immediate force wait
+2025-03-03 12:33:29.645 AEDT [164619] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.004 s; sync files=3, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/2A96A90, redo lsn=0/2A96A38
+2025-03-03 12:33:35.621 AEDT [164772] FATAL:  database "ass1" does not exist
+2025-03-03 12:38:29.745 AEDT [164619] LOG:  checkpoint starting: time
+2025-03-03 12:40:04.097 AEDT [164619] LOG:  checkpoint complete: wrote 945 buffers (5.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=94.350 s, sync=0.001 s, total=94.352 s; sync files=317, longest=0.001 s, average=0.001 s; distance=4375 kB, estimate=4375 kB; lsn=0/2EDCA78, redo lsn=0/2EDC9E8
+2025-03-03 12:44:59.109 AEDT [165213] ERROR:  relation "maker" does not exist at character 27
+2025-03-03 12:44:59.109 AEDT [165213] STATEMENT:  select name, founded from maker;
+2025-03-03 12:45:07.837 AEDT [165213] ERROR:  relation "maker" does not exist at character 27
+2025-03-03 12:45:07.837 AEDT [165213] STATEMENT:  select name, founded from maker;
+2025-03-03 12:45:14.039 AEDT [165213] ERROR:  relation "maker" does not exist at character 27
+2025-03-03 12:45:14.039 AEDT [165213] STATEMENT:  select name, founded from maker;
+2025-03-03 12:45:17.712 AEDT [165213] ERROR:  syntax error at or near "select" at character 34
+2025-03-03 12:45:17.712 AEDT [165213] STATEMENT:  select name, founded from makers
+	select name, founded from maker;
+2025-03-03 12:45:40.426 AEDT [165213] ERROR:  syntax error at or near "select" at character 34
+2025-03-03 12:45:40.426 AEDT [165213] STATEMENT:  select name, founded from makers
+	select name, founded from makers
+	order by founded
+	;
+2025-03-03 12:45:59.823 AEDT [165213] ERROR:  syntax error at or near "head" at character 50
+2025-03-03 12:45:59.823 AEDT [165213] STATEMENT:  select name,founded from makers
+	order by founded
+	head
+	;
+2025-03-03 12:49:09.939 AEDT [165213] ERROR:  syntax error at or near "1" at character 12
+2025-03-03 12:49:09.939 AEDT [165213] STATEMENT:  select top 1 name, founded
+	from makers
+	order by founded;
+2025-03-03 12:49:18.338 AEDT [165213] ERROR:  syntax error at or near "1" at character 12
+2025-03-03 12:49:18.338 AEDT [165213] STATEMENT:  select top 1 name,founded
+	from makers
+	order by founded;
+2025-03-03 12:49:27.801 AEDT [165213] ERROR:  syntax error at or near "1" at character 12
+2025-03-03 12:49:27.801 AEDT [165213] STATEMENT:  select TOP 1 name,founded
+	from makers
+	order by founded;
+2025-03-03 12:49:35.801 AEDT [165213] ERROR:  syntax error at or near "1" at character 12
+2025-03-03 12:49:35.801 AEDT [165213] STATEMENT:  SELECT TOP 1 name, founded
+	FROM makers
+	ORDER BY founded;
+2025-03-03 12:50:40.074 AEDT [165213] ERROR:  syntax error at or near "1" at character 12
+2025-03-03 12:50:40.074 AEDT [165213] STATEMENT:  SELECT TOP 1 *
+	FROM your_table
+	ORDER BY column_name;
+2025-03-03 12:50:55.951 AEDT [165213] ERROR:  syntax error at or near "1" at character 12
+2025-03-03 12:50:55.951 AEDT [165213] STATEMENT:  SELECT TOP 1 *
+	FROM your_table
+	ORDER BY column_name
+	;
+2025-03-03 12:51:06.480 AEDT [165213] ERROR:  syntax error at or near "3" at character 12
+2025-03-03 12:51:06.480 AEDT [165213] STATEMENT:  SELECT TOP 3 * FROM Makers;
+2025-03-03 12:51:12.856 AEDT [165213] ERROR:  syntax error at or near "3" at character 12
+2025-03-03 12:51:12.856 AEDT [165213] STATEMENT:  SELECT TOP 3 * FROM makers;
+2025-03-03 12:51:17.872 AEDT [165213] ERROR:  syntax error at or near "FROM" at character 14
+2025-03-03 12:51:17.872 AEDT [165213] STATEMENT:  SELECT TOP * FROM makers;
+2025-03-03 12:51:53.122 AEDT [165213] ERROR:  syntax error at or near "1" at character 12
+2025-03-03 12:51:53.122 AEDT [165213] STATEMENT:  SELECT TOP 1 *
+	FROM your_table
+	ORDER BY column_name;
+2025-03-03 12:55:11.525 AEDT [169997] FATAL:  role "s1szss1" does not exist
+2025-03-03 12:55:11.713 AEDT [164618] LOG:  received smart shutdown request
+2025-03-03 12:55:11.716 AEDT [164618] LOG:  received SIGHUP, reloading configuration files
+2025-03-03 12:55:11.716 AEDT [164618] LOG:  background worker "logical replication launcher" (PID 164624) exited with exit code 1
+2025-03-03 12:55:11.717 AEDT [164619] LOG:  shutting down
+2025-03-03 12:55:11.717 AEDT [164619] LOG:  checkpoint starting: shutdown immediate
+2025-03-03 12:55:11.718 AEDT [164619] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=3938 kB; lsn=0/2EDCB28, redo lsn=0/2EDCB28
+2025-03-03 12:55:11.723 AEDT [164618] LOG:  database system is shut down
+2025-03-03 12:58:43.861 AEDT [171211] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-03 12:58:43.862 AEDT [171211] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-03 12:58:43.864 AEDT [171214] LOG:  database system was shut down at 2025-03-03 12:55:11 AEDT
+2025-03-03 12:58:43.866 AEDT [171211] LOG:  database system is ready to accept connections
+2025-03-03 12:58:54.125 AEDT [171224] ERROR:  relation "q1" does not exist at character 15
+2025-03-03 12:58:54.125 AEDT [171224] STATEMENT:  select * from q1;
+2025-03-03 12:58:59.604 AEDT [171224] ERROR:  relation "q1" does not exist at character 15
+2025-03-03 12:58:59.604 AEDT [171224] STATEMENT:  select * from q1 order by maker;
+2025-03-03 12:59:16.770 AEDT [171211] LOG:  received smart shutdown request
+2025-03-03 12:59:16.773 AEDT [171211] LOG:  received SIGHUP, reloading configuration files
+2025-03-03 12:59:16.773 AEDT [171211] LOG:  background worker "logical replication launcher" (PID 171217) exited with exit code 1
+2025-03-03 12:59:16.774 AEDT [171212] LOG:  shutting down
+2025-03-03 12:59:16.774 AEDT [171212] LOG:  checkpoint starting: shutdown immediate
+2025-03-03 12:59:16.775 AEDT [171212] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/2EDCBD8, redo lsn=0/2EDCBD8
+2025-03-03 12:59:16.778 AEDT [171211] LOG:  database system is shut down
+2025-03-03 14:28:34.494 AEDT [191636] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-03 14:28:34.495 AEDT [191636] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-03 14:28:34.497 AEDT [191639] LOG:  database system was shut down at 2025-03-03 12:59:16 AEDT
+2025-03-03 14:28:34.499 AEDT [191636] LOG:  database system is ready to accept connections
+2025-03-03 14:33:34.557 AEDT [191637] LOG:  checkpoint starting: time
+2025-03-03 14:33:34.660 AEDT [191637] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.101 s, sync=0.001 s, total=0.104 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/2EDCCE0, redo lsn=0/2EDCC88
+2025-03-03 14:34:29.931 AEDT [191656] ERROR:  syntax error at or near "mons" at character 42
+2025-03-03 14:34:29.931 AEDT [191656] STATEMENT:  select * from styles where min_aging < 2 mons
+	;
+2025-03-03 14:34:44.816 AEDT [191656] ERROR:  operator does not exist: interval < integer at character 38
+2025-03-03 14:34:44.816 AEDT [191656] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2025-03-03 14:34:44.816 AEDT [191656] STATEMENT:  select * from styles where min_aging < 2;
+2025-03-03 14:34:49.771 AEDT [191656] ERROR:  syntax error at or near "year" at character 42
+2025-03-03 14:34:49.771 AEDT [191656] STATEMENT:  select * from styles where min_aging < 2 year;
+2025-03-03 14:34:57.240 AEDT [191656] ERROR:  syntax error at or near "days" at character 43
+2025-03-03 14:34:57.240 AEDT [191656] STATEMENT:  select * from styles where min_aging < 42 days;
+2025-03-03 14:35:03.377 AEDT [191656] ERROR:  syntax error at or near "days" at character 43
+2025-03-03 14:35:03.377 AEDT [191656] STATEMENT:  select * from styles where min_aging = 42 days;
+2025-03-03 14:39:52.529 AEDT [191656] ERROR:  syntax error at or near "2" at character 74
+2025-03-03 14:39:52.529 AEDT [191656] STATEMENT:  SELECT * 
+	FROM styles 
+	WHERE min_aging > DATE_SUB(CURRENT_DATE, INTERVAL 2 MONTH);
+2025-03-03 14:41:04.244 AEDT [191656] ERROR:  syntax error at or near "2" at character 74
+2025-03-03 14:41:04.244 AEDT [191656] STATEMENT:  SELECT * 
+	FROM styles 
+	WHERE min_aging > DATE_SUB(CURRENT_DATE, INTERVAL 2 MONTH);
+2025-03-03 14:41:06.987 AEDT [191656] ERROR:  syntax error at or near "clear" at character 1
+2025-03-03 14:41:06.987 AEDT [191656] STATEMENT:  clear
+	;
+2025-03-03 14:42:14.726 AEDT [195252] ERROR:  syntax error at or near "2" at character 49
+2025-03-03 14:42:14.726 AEDT [195252] STATEMENT:  select * from styles where min_aging < INTERVAL 2 MONTHS;
+2025-03-03 14:42:25.629 AEDT [195252] ERROR:  syntax error at or near "2" at character 49
+2025-03-03 14:42:25.629 AEDT [195252] STATEMENT:  select * from styles where min_aging < INTERVAL 2 MONTH;
+2025-03-03 14:42:38.665 AEDT [195252] ERROR:  syntax error at or near "2" at character 74
+2025-03-03 14:42:38.665 AEDT [195252] STATEMENT:  SELECT * 
+	FROM styles 
+	WHERE min_aging > DATE_SUB(CURRENT_DATE, INTERVAL 2 MONTH);
+2025-03-03 14:42:50.515 AEDT [195252] ERROR:  syntax error at or near "2" at character 52
+2025-03-03 14:42:50.515 AEDT [195252] STATEMENT:  SELECT * 
+	FROM styles 
+	WHERE min_aging >  INTERVAL 2 MONTH;
+2025-03-03 14:44:49.829 AEDT [195252] ERROR:  syntax error at or near ";" at character 37
+2025-03-03 14:44:49.829 AEDT [195252] STATEMENT:  select * from styles where fat < 50%;
+2025-03-03 14:45:42.188 AEDT [195252] ERROR:  column "count" does not exist at character 8
+2025-03-03 14:45:42.188 AEDT [195252] STATEMENT:  select count name  from styles where fat < 50;
+2025-03-03 15:10:36.866 AEDT [195252] ERROR:  syntax error at or near ";" at character 52
+2025-03-03 15:10:36.866 AEDT [195252] STATEMENT:  select name, count(fat)
+	from styles
+	where fat > 50%;
+2025-03-03 15:10:52.035 AEDT [195252] ERROR:  column "styles.name" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-03-03 15:10:52.035 AEDT [195252] STATEMENT:  select name, count(fat)
+	from styles
+	where fat > 50;
+2025-03-03 15:12:01.889 AEDT [195252] ERROR:  column "styles.fat" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-03-03 15:12:01.889 AEDT [195252] STATEMENT:  select fat, count(name)
+	from styles
+	where fat > 50;
+2025-03-03 15:28:12.803 AEDT [191636] LOG:  received smart shutdown request
+2025-03-03 15:28:12.804 AEDT [191636] LOG:  received SIGHUP, reloading configuration files
+2025-03-03 15:28:12.805 AEDT [191636] LOG:  background worker "logical replication launcher" (PID 191642) exited with exit code 1
+2025-03-03 15:28:12.807 AEDT [191637] LOG:  shutting down
+2025-03-03 15:28:12.807 AEDT [191637] LOG:  checkpoint starting: shutdown immediate
+2025-03-03 15:28:12.808 AEDT [191637] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/2EDCD90, redo lsn=0/2EDCD90
+2025-03-03 15:28:12.815 AEDT [191636] LOG:  database system is shut down
+2025-03-03 16:19:04.614 AEDT [228235] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-03 16:19:04.615 AEDT [228235] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-03 16:19:04.616 AEDT [228238] LOG:  database system was shut down at 2025-03-03 15:28:12 AEDT
+2025-03-03 16:19:04.618 AEDT [228235] LOG:  database system is ready to accept connections
+2025-03-03 16:19:53.563 AEDT [228253] ERROR:  syntax error at or near "/?" at character 1
+2025-03-03 16:19:53.563 AEDT [228253] STATEMENT:  /?
+	;
+2025-03-03 16:22:27.839 AEDT [228235] LOG:  received smart shutdown request
+2025-03-03 16:22:27.841 AEDT [228235] LOG:  received SIGHUP, reloading configuration files
+2025-03-03 16:22:27.842 AEDT [228235] LOG:  background worker "logical replication launcher" (PID 228241) exited with exit code 1
+2025-03-03 16:22:27.842 AEDT [228236] LOG:  shutting down
+2025-03-03 16:22:27.842 AEDT [228236] LOG:  checkpoint starting: shutdown immediate
+2025-03-03 16:22:27.844 AEDT [228236] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/2EDCE40, redo lsn=0/2EDCE40
+2025-03-03 16:22:27.846 AEDT [228235] LOG:  database system is shut down
+2025-03-03 20:20:02.133 AEDT [288002] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-03 20:20:02.133 AEDT [288002] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-03 20:20:02.134 AEDT [288005] LOG:  database system was shut down at 2025-03-03 16:22:27 AEDT
+2025-03-03 20:20:02.137 AEDT [288002] LOG:  database system is ready to accept connections
+2025-03-03 20:20:12.596 AEDT [288003] LOG:  checkpoint starting: immediate force wait
+2025-03-03 20:20:12.598 AEDT [288003] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=3, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/2EDD548, redo lsn=0/2EDD4F0
+2025-03-03 20:25:12.698 AEDT [288003] LOG:  checkpoint starting: time
+2025-03-03 20:26:47.061 AEDT [288003] LOG:  checkpoint complete: wrote 945 buffers (5.8%); 0 WAL file(s) added, 0 removed, 1 recycled; write=94.361 s, sync=0.002 s, total=94.364 s; sync files=317, longest=0.001 s, average=0.001 s; distance=4375 kB, estimate=4375 kB; lsn=0/3323540, redo lsn=0/33234B0
+2025-03-03 20:42:39.989 AEDT [288002] LOG:  received smart shutdown request
+2025-03-03 20:42:39.990 AEDT [288002] LOG:  received SIGHUP, reloading configuration files
+2025-03-03 20:42:39.991 AEDT [288002] LOG:  background worker "logical replication launcher" (PID 288008) exited with exit code 1
+2025-03-03 20:42:39.991 AEDT [288003] LOG:  shutting down
+2025-03-03 20:42:39.992 AEDT [288003] LOG:  checkpoint starting: shutdown immediate
+2025-03-03 20:42:39.992 AEDT [288003] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=3938 kB; lsn=0/33235F0, redo lsn=0/33235F0
+2025-03-03 20:42:40.001 AEDT [288002] LOG:  database system is shut down
+2025-03-03 20:59:01.763 AEDT [298381] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-03 20:59:01.763 AEDT [298381] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-03 20:59:01.765 AEDT [298384] LOG:  database system was shut down at 2025-03-03 20:42:39 AEDT
+2025-03-03 20:59:01.767 AEDT [298381] LOG:  database system is ready to accept connections
+2025-03-03 20:59:04.089 AEDT [298405] FATAL:  database "TestingDB" does not exist
+2025-03-03 21:00:09.501 AEDT [298609] ERROR:  database "TestingDB" already exists
+2025-03-03 21:00:09.501 AEDT [298609] STATEMENT:  CREATE DATABASE "TestingDB";
+2025-03-03 21:00:16.461 AEDT [298630] FATAL:  database "z5477862" does not exist
+2025-03-03 21:00:27.771 AEDT [298662] FATAL:  lock file "postmaster.pid" already exists
+2025-03-03 21:00:27.771 AEDT [298662] HINT:  Is another postmaster (PID 298381) running in data directory "/localstorage/z5477862/pgsql/data"?
+2025-03-03 21:00:31.790 AEDT [298381] LOG:  received fast shutdown request
+2025-03-03 21:00:31.791 AEDT [298381] LOG:  aborting any active transactions
+2025-03-03 21:00:31.792 AEDT [298381] LOG:  background worker "logical replication launcher" (PID 298387) exited with exit code 1
+2025-03-03 21:00:31.792 AEDT [298382] LOG:  shutting down
+2025-03-03 21:00:31.793 AEDT [298382] LOG:  checkpoint starting: shutdown immediate
+2025-03-03 21:00:31.810 AEDT [298382] LOG:  checkpoint complete: wrote 930 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.016 s, sync=0.001 s, total=0.018 s; sync files=301, longest=0.001 s, average=0.001 s; distance=4249 kB, estimate=4249 kB; lsn=0/3749D10, redo lsn=0/3749D10
+2025-03-03 21:00:31.819 AEDT [298381] LOG:  database system is shut down
+2025-03-03 21:00:34.292 AEDT [298683] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-03 21:00:34.292 AEDT [298683] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-03 21:00:34.293 AEDT [298686] LOG:  database system was shut down at 2025-03-03 21:00:31 AEDT
+2025-03-03 21:00:34.295 AEDT [298683] LOG:  database system is ready to accept connections
+2025-03-03 21:00:42.087 AEDT [298713] ERROR:  relation "makers" does not exist at character 70
+2025-03-03 21:00:42.087 AEDT [298713] STATEMENT:  create or replace view Q1(maker,founded)
+	as
+	SELECT name,founded FROM makers
+	ORDER BY founded
+	LIMIT 1;
+2025-03-03 21:05:34.344 AEDT [298684] LOG:  checkpoint starting: time
+2025-03-03 21:05:34.648 AEDT [298684] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.302 s, sync=0.001 s, total=0.304 s; sync files=4, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/3749E18, redo lsn=0/3749DC0
+2025-03-03 21:22:57.566 AEDT [304702] ERROR:  syntax error at or near "clear" at character 1
+2025-03-03 21:22:57.566 AEDT [304702] STATEMENT:  clear
+	;
+2025-03-03 21:23:34.400 AEDT [298683] LOG:  received smart shutdown request
+2025-03-03 21:23:34.402 AEDT [298683] LOG:  received SIGHUP, reloading configuration files
+2025-03-03 21:23:34.403 AEDT [298683] LOG:  background worker "logical replication launcher" (PID 298689) exited with exit code 1
+2025-03-03 21:23:34.403 AEDT [298684] LOG:  shutting down
+2025-03-03 21:23:34.404 AEDT [298684] LOG:  checkpoint starting: shutdown immediate
+2025-03-03 21:23:34.405 AEDT [298684] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=20, longest=0.001 s, average=0.001 s; distance=108 kB, estimate=108 kB; lsn=0/3764E98, redo lsn=0/3764E98
+2025-03-03 21:23:34.408 AEDT [298683] LOG:  database system is shut down
+2025-03-04 12:06:29.104 AEDT [430673] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-04 12:06:29.104 AEDT [430673] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-04 12:06:29.106 AEDT [430676] LOG:  database system was shut down at 2025-03-03 21:23:34 AEDT
+2025-03-04 12:06:29.108 AEDT [430673] LOG:  database system is ready to accept connections
+2025-03-04 12:09:57.031 AEDT [432432] ERROR:  relation "q1" already exists
+2025-03-04 12:09:57.031 AEDT [432432] STATEMENT:  CREATE VIEW Q1(maker,founded)
+	as
+	SELECT name,founded FROM makers
+	ORDER BY founded
+	FETCH FIRST 1 ROW ONLY;
+2025-03-04 12:10:09.912 AEDT [432469] FATAL:  database "z5477862" does not exist
+2025-03-04 12:11:29.202 AEDT [430674] LOG:  checkpoint starting: time
+2025-03-04 12:11:30.407 AEDT [430674] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.203 s, sync=0.001 s, total=1.205 s; sync files=11, longest=0.001 s, average=0.001 s; distance=37 kB, estimate=37 kB; lsn=0/376E438, redo lsn=0/376E3E0
+2025-03-04 12:54:03.522 AEDT [441951] ERROR:  relation "q1" already exists
+2025-03-04 12:54:03.522 AEDT [441951] STATEMENT:  CREATE VIEW Q1(maker,founded)
+	as
+	SELECT name,founded FROM makers
+	ORDER BY founded
+	FETCH FIRST 1 ROW ONLY;
+2025-03-04 13:17:07.873 AEDT [448007] ERROR:  relation "q1" already exists
+2025-03-04 13:17:07.873 AEDT [448007] STATEMENT:  CREATE VIEW Q1(maker,founded)
+	as
+	SELECT name,founded FROM makers
+	ORDER BY founded
+	FETCH FIRST 1 ROW ONLY;
+2025-03-04 13:29:19.553 AEDT [448007] ERROR:  syntax error at or near "ls" at character 1
+2025-03-04 13:29:19.553 AEDT [448007] STATEMENT:  ls
+	;
+2025-03-04 13:29:23.324 AEDT [448007] ERROR:  syntax error at or near "l" at character 1
+2025-03-04 13:29:23.324 AEDT [448007] STATEMENT:  l
+	l
+	l
+	l
+	l
+	l
+	l;
+2025-03-04 13:33:43.678 AEDT [453698] ERROR:  relation "q1" already exists
+2025-03-04 13:33:43.678 AEDT [453698] STATEMENT:  CREATE VIEW Q1(maker,founded)
+	as
+	SELECT name,founded FROM makers
+	ORDER BY founded
+	FETCH FIRST 1 ROW ONLY;
+2025-03-04 13:34:45.084 AEDT [453906] ERROR:  syntax error at or near ";" at character 62
+2025-03-04 13:34:45.084 AEDT [453906] STATEMENT:  create or replace view Q2(cheese,maker)
+	as
+	-- your code here
+	;
+2025-03-04 13:34:45.084 AEDT [453906] ERROR:  syntax error at or near ";" at character 62
+2025-03-04 13:34:45.084 AEDT [453906] STATEMENT:  create or replace view Q3(cheese,maker)
+	as
+	-- your code here
+	;
+2025-03-04 13:34:45.084 AEDT [453906] ERROR:  syntax error at or near ";" at character 67
+2025-03-04 13:34:45.084 AEDT [453906] STATEMENT:  create or replace view Q4(hardness,ncheeses)
+	as
+	-- your code here
+	;
+2025-03-04 13:34:45.084 AEDT [453906] ERROR:  syntax error at or near ";" at character 55
+2025-03-04 13:34:45.084 AEDT [453906] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-04 13:34:45.084 AEDT [453906] ERROR:  syntax error at or near ";" at character 57
+2025-03-04 13:34:45.084 AEDT [453906] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-04 13:34:45.084 AEDT [453906] ERROR:  syntax error at or near ";" at character 87
+2025-03-04 13:34:45.084 AEDT [453906] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-04 13:36:30.519 AEDT [430674] LOG:  checkpoint starting: time
+2025-03-04 13:36:31.022 AEDT [430674] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.502 s, sync=0.001 s, total=0.503 s; sync files=6, longest=0.001 s, average=0.001 s; distance=23 kB, estimate=35 kB; lsn=0/37741F0, redo lsn=0/3774198
+2025-03-04 13:51:06.447 AEDT [430673] LOG:  received smart shutdown request
+2025-03-04 13:51:06.449 AEDT [430673] LOG:  received SIGHUP, reloading configuration files
+2025-03-04 13:51:06.451 AEDT [430673] LOG:  background worker "logical replication launcher" (PID 430679) exited with exit code 1
+2025-03-04 13:51:06.453 AEDT [430674] LOG:  shutting down
+2025-03-04 13:51:06.453 AEDT [430674] LOG:  checkpoint starting: shutdown immediate
+2025-03-04 13:51:06.454 AEDT [430674] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=32 kB; lsn=0/37742A0, redo lsn=0/37742A0
+2025-03-04 13:51:06.461 AEDT [430673] LOG:  database system is shut down
+2025-03-04 14:01:59.859 AEDT [460773] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-04 14:01:59.859 AEDT [460773] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-04 14:01:59.861 AEDT [460776] LOG:  database system was shut down at 2025-03-04 13:51:06 AEDT
+2025-03-04 14:01:59.863 AEDT [460773] LOG:  database system is ready to accept connections
+2025-03-04 14:02:23.168 AEDT [461119] ERROR:  syntax error at or near ";" at character 62
+2025-03-04 14:02:23.168 AEDT [461119] STATEMENT:  create or replace view Q2(cheese,maker)
+	as
+	-- your code here
+	;
+2025-03-04 14:02:23.168 AEDT [461119] ERROR:  syntax error at or near ";" at character 62
+2025-03-04 14:02:23.168 AEDT [461119] STATEMENT:  create or replace view Q3(cheese,maker)
+	as
+	-- your code here
+	;
+2025-03-04 14:02:23.168 AEDT [461119] ERROR:  syntax error at or near ";" at character 67
+2025-03-04 14:02:23.168 AEDT [461119] STATEMENT:  create or replace view Q4(hardness,ncheeses)
+	as
+	-- your code here
+	;
+2025-03-04 14:02:23.168 AEDT [461119] ERROR:  syntax error at or near ";" at character 55
+2025-03-04 14:02:23.168 AEDT [461119] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-04 14:02:23.168 AEDT [461119] ERROR:  syntax error at or near ";" at character 57
+2025-03-04 14:02:23.168 AEDT [461119] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-04 14:02:23.168 AEDT [461119] ERROR:  syntax error at or near ";" at character 87
+2025-03-04 14:02:23.168 AEDT [461119] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-04 14:04:59.285 AEDT [462040] ERROR:  syntax error at or near ";" at character 62
+2025-03-04 14:04:59.285 AEDT [462040] STATEMENT:  create or replace view Q2(cheese,maker)
+	as
+	-- your code here
+	;
+2025-03-04 14:04:59.285 AEDT [462040] ERROR:  syntax error at or near ";" at character 62
+2025-03-04 14:04:59.285 AEDT [462040] STATEMENT:  create or replace view Q3(cheese,maker)
+	as
+	-- your code here
+	;
+2025-03-04 14:04:59.286 AEDT [462040] ERROR:  syntax error at or near ";" at character 67
+2025-03-04 14:04:59.286 AEDT [462040] STATEMENT:  create or replace view Q4(hardness,ncheeses)
+	as
+	-- your code here
+	;
+2025-03-04 14:04:59.286 AEDT [462040] ERROR:  syntax error at or near ";" at character 55
+2025-03-04 14:04:59.286 AEDT [462040] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-04 14:04:59.286 AEDT [462040] ERROR:  syntax error at or near ";" at character 57
+2025-03-04 14:04:59.286 AEDT [462040] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-04 14:04:59.286 AEDT [462040] ERROR:  syntax error at or near ";" at character 87
+2025-03-04 14:04:59.286 AEDT [462040] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-04 14:06:59.907 AEDT [460774] LOG:  checkpoint starting: time
+2025-03-04 14:07:00.411 AEDT [460774] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.503 s, sync=0.001 s, total=0.504 s; sync files=7, longest=0.001 s, average=0.001 s; distance=26 kB, estimate=26 kB; lsn=0/377ACB8, redo lsn=0/377AC60
+2025-03-04 14:15:39.174 AEDT [466238] ERROR:  column "styles" does not exist at character 8
+2025-03-04 14:15:39.174 AEDT [466238] STATEMENT:  select styles, name from makers;
+2025-03-04 14:16:13.076 AEDT [466238] ERROR:  column "styles" does not exist at character 8
+2025-03-04 14:16:13.076 AEDT [466238] HINT:  Perhaps you meant to reference the column "cheeses.style".
+2025-03-04 14:16:13.076 AEDT [466238] STATEMENT:  select styles, name from cheeses;
+2025-03-04 14:30:27.955 AEDT [460773] LOG:  received smart shutdown request
+2025-03-04 14:30:27.957 AEDT [466238] FATAL:  terminating connection due to administrator command
+2025-03-04 14:30:27.957 AEDT [466238] LOG:  could not send data to client: Broken pipe
+2025-03-04 14:30:27.959 AEDT [460773] LOG:  received SIGHUP, reloading configuration files
+2025-03-04 14:30:27.960 AEDT [460773] LOG:  background worker "logical replication launcher" (PID 460779) exited with exit code 1
+2025-03-04 14:30:27.960 AEDT [460774] LOG:  shutting down
+2025-03-04 14:30:27.960 AEDT [460774] LOG:  checkpoint starting: shutdown immediate
+2025-03-04 14:30:27.961 AEDT [460774] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=1, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=23 kB; lsn=0/377AD68, redo lsn=0/377AD68
+2025-03-04 14:30:27.964 AEDT [460773] LOG:  database system is shut down
+2025-03-04 14:34:23.809 AEDT [472697] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-04 14:34:23.809 AEDT [472697] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-04 14:34:23.811 AEDT [472700] LOG:  database system was shut down at 2025-03-04 14:30:27 AEDT
+2025-03-04 14:34:23.813 AEDT [472697] LOG:  database system is ready to accept connections
+2025-03-04 14:35:29.749 AEDT [472721] ERROR:  column "cheese" does not exist at character 8
+2025-03-04 14:35:29.749 AEDT [472721] STATEMENT:  select cheese from cheeses
+	where cheese=style;
+2025-03-04 14:35:44.447 AEDT [472721] ERROR:  column "cheese" does not exist at character 8
+2025-03-04 14:35:44.447 AEDT [472721] STATEMENT:  select cheese from cheeses
+	where cheeses.cheese = cheeses.style;
+2025-03-04 14:39:23.910 AEDT [472698] LOG:  checkpoint starting: time
+2025-03-04 14:39:24.113 AEDT [472698] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.202 s, sync=0.001 s, total=0.203 s; sync files=4, longest=0.001 s, average=0.001 s; distance=3 kB, estimate=3 kB; lsn=0/377BC30, redo lsn=0/377BBD8
+2025-03-04 14:42:34.131 AEDT [472721] ERROR:  column "cheese" does not exist at character 29
+2025-03-04 14:42:34.131 AEDT [472721] STATEMENT:  select * from cheeses where cheese = "Brillat-Savarin";
+2025-03-04 14:42:41.725 AEDT [472721] ERROR:  column "cheese" does not exist at character 29
+2025-03-04 14:42:41.725 AEDT [472721] STATEMENT:  select * from cheeses where cheese="Brillat-Savarin";
+2025-03-04 14:42:51.013 AEDT [472721] ERROR:  column "cheese" does not exist at character 29
+2025-03-04 14:42:51.013 AEDT [472721] STATEMENT:  select * from cheeses where cheese='Brillat-Savarin';
+2025-03-04 14:44:31.752 AEDT [472721] ERROR:  syntax error at or near "<" at character 102
+2025-03-04 14:44:31.752 AEDT [472721] STATEMENT:  SELECT c.name AS cheese_name, m.*
+	FROM Cheeses c
+	JOIN Makers m ON c.made_by = m.id
+	WHERE c.made_by = <made_by_number>;
+2025-03-04 14:44:52.557 AEDT [472721] ERROR:  syntax error at or near "<" at character 102
+2025-03-04 14:44:52.557 AEDT [472721] STATEMENT:  SELECT c.name AS cheese_name, m.*
+	FROM Cheeses c
+	JOIN Makers m ON c.made_by = m.id
+	WHERE c.made_by = <212>;
+2025-03-04 14:54:05.184 AEDT [472721] ERROR:  column "style" does not exist at character 8
+2025-03-04 14:54:05.184 AEDT [472721] STATEMENT:  select style from styles;
+2025-03-04 14:55:03.124 AEDT [472721] ERROR:  syntax error at or near "ls" at character 1
+2025-03-04 14:55:03.124 AEDT [472721] STATEMENT:  ls
+	;
+2025-03-04 15:02:00.342 AEDT [478270] ERROR:  syntax error at or near "from" at character 32
+2025-03-04 15:02:00.342 AEDT [478270] STATEMENT:  select name from cheeses, name from styles 
+	JOIN styles ON cheeses.styles = styles.id
+	where cheeses.name = styles.name;
+2025-03-04 15:05:28.842 AEDT [478270] ERROR:  syntax error at or near "from" at character 32
+2025-03-04 15:05:28.842 AEDT [478270] STATEMENT:  select name from cheeses, name from styles 
+	JOIN styles ON cheeses.styles = styles.id
+	where cheeses.name = styles.name;
+2025-03-04 15:08:31.995 AEDT [478270] ERROR:  syntax error at or near "from" at character 47
+2025-03-04 15:08:31.995 AEDT [478270] STATEMENT:  select name from cheeses AS cheese_name, name from styles as style_name
+	FROM cheeses JOIN styles where cheeses.style = styles.id
+	where cheeses_name=styles_name;
+2025-03-04 15:08:47.670 AEDT [478270] ERROR:  syntax error at or near "select" at character 42
+2025-03-04 15:08:47.670 AEDT [478270] STATEMENT:  select name from cheeses AS cheese_name, select name from styles as style_name
+	FROM cheeses JOIN styles where cheeses.style = styles.id
+	where cheeses_name=styles_name;
+2025-03-04 15:09:42.869 AEDT [478270] ERROR:  syntax error at or near "select" at character 42
+2025-03-04 15:09:42.869 AEDT [478270] STATEMENT:  select name from cheeses AS cheese_name, select name from styles as style_name
+	FROM cheeses JOIN styles where cheeses.style = styles.id
+	where cheeses_name=styles_name;
+2025-03-04 15:12:15.737 AEDT [481677] ERROR:  missing FROM-clause entry for table "style" at character 98
+2025-03-04 15:12:15.737 AEDT [481677] STATEMENT:  select cheeses.name AS c_name, styles.name as s_name
+	FROM cheeses JOIN styles on cheeses.style = style.id
+	where c_name = s_name;
+2025-03-04 15:12:29.771 AEDT [481677] ERROR:  column "c_name" does not exist at character 114
+2025-03-04 15:12:29.771 AEDT [481677] HINT:  Perhaps you meant to reference the column "cheeses.name" or the column "styles.name".
+2025-03-04 15:12:29.771 AEDT [481677] STATEMENT:  select cheeses.name AS c_name, styles.name as s_name
+	FROM cheeses JOIN styles on cheeses.style = styles.id
+	where c_name = s_name;
+2025-03-04 15:12:59.369 AEDT [481677] ERROR:  column "c_name" does not exist at character 114
+2025-03-04 15:12:59.369 AEDT [481677] HINT:  Perhaps you meant to reference the column "cheeses.name" or the column "styles.name".
+2025-03-04 15:12:59.369 AEDT [481677] STATEMENT:  select cheeses.name AS c_name, styles.name as s_name
+	FROM cheeses JOIN styles on cheeses.style = styles.id
+	where c_name = s_name;
+2025-03-04 15:14:25.302 AEDT [482172] ERROR:  column s.namel does not exist at character 85
+2025-03-04 15:14:25.302 AEDT [482172] HINT:  Perhaps you meant to reference the column "s.name".
+2025-03-04 15:14:25.302 AEDT [482172] STATEMENT:  SELECT c.name, s.name
+	FROM cheeses c
+	Join styles s on c.style = s.id
+	WHERE c.name = s.namel
+	;
+2025-03-04 15:17:16.813 AEDT [482870] ERROR:  column c.maker does not exist at character 24
+2025-03-04 15:17:16.813 AEDT [482870] STATEMENT:  select c.name, s.name, c.maker
+	FROM cheeses c
+	JOIN styles s ON c.style = s.id
+	WHERE c.name = s.name;
+2025-03-04 15:17:34.726 AEDT [482870] ERROR:  relation "maker" does not exist at character 15
+2025-03-04 15:17:34.726 AEDT [482870] STATEMENT:  select * from maker;
+2025-03-04 15:20:25.575 AEDT [482870] ERROR:  syntax error at or near "JOIN" at character 1
+2025-03-04 15:20:25.575 AEDT [482870] STATEMENT:  JOIN makers m ON c.made_by = m.id
+	select c.name, s.name, c.made_by
+	FROM cheeses c
+	JOIN styles s ON c.style = s.idJOIN makers m ON c.made_by = m.id
+	WHERE c.name = s.name;
+2025-03-04 15:23:37.801 AEDT [482870] ERROR:  syntax error at or near "cheese" at character 1
+2025-03-04 15:23:37.801 AEDT [482870] STATEMENT:  cheese        |           maker           
+	---------------------+---------------------------
+	 Brillat-Savarin     | Fromagerie Berthaut
+	 Comte               | La Fromagerie de la Combe
+	 Emmental            | Swiss Alpine Cheese
+	 Feta                | Caseificio San Pietro
+	 Gouda               | Kaeserei Herzog
+	 Gruyere             | Swiss Alpine Cheese
+	 Manchego            | Caseificio San Pietro
+	 Monterey Jack       | Tillamook Creamery
+	 Parmigiano-Reggiano | Caseificio Il Fiorino
+	select c.name, m.name
+	FROM cheeses c
+	JOIN styles s ON c.style = s.id
+	JOIN makers m on c.made_by = m.id
+	WHERE c.name = s.name
+	ORDER BY c.name;
+2025-03-04 15:23:52.762 AEDT [482870] ERROR:  syntax error at or near "cheese" at character 1
+2025-03-04 15:23:52.762 AEDT [482870] STATEMENT:  cheese        |           maker           
+	---------------------+---------------------------
+	 Brillat-Savarin     | Fromagerie Berthaut
+	 Comte               | La Fromagerie de la Combe
+	 Emmental            | Swiss Alpine Cheese
+	 Feta                | Caseificio San Pietro
+	 Gouda               | Kaeserei Herzog
+	 Gruyere             | Swiss Alpine Cheese
+	 Manchego            | Caseificio San Pietro
+	 Monterey Jack       | Tillamook Creamery
+	 Parmigiano-Reggiano | Caseificio Il Fiorino
+	select c.name, m.name
+	FROM cheeses c
+	JOIN styles s ON c.style = s.id
+	JOIN makers m on c.made_by = m.id
+	WHERE c.name = s.name
+	ORDER BY c.name;
+2025-03-04 15:23:59.854 AEDT [482870] ERROR:  syntax error at or near "cheese" at character 1
+2025-03-04 15:23:59.854 AEDT [482870] STATEMENT:  cheese        |           maker           
+	---------------------+---------------------------
+	 Brillat-Savarin     | Fromagerie Berthaut
+	 Comte               | La Fromagerie de la Combe
+	 Emmental            | Swiss Alpine Cheese
+	 Feta                | Caseificio San Pietro
+	 Gouda               | Kaeserei Herzog
+	 Gruyere             | Swiss Alpine Cheese
+	 Manchego            | Caseificio San Pietro
+	 Monterey Jack       | Tillamook Creamery
+	 Parmigiano-Reggiano | Caseificio Il Fiorino
+	select c.name, m.name
+	FROM cheeses c
+	JOIN styles s ON c.style = s.id
+	JOIN makers m on c.made_by = m.id
+	WHERE c.name = s.name
+	ORDER BY c.name;
+2025-03-04 15:29:40.923 AEDT [490272] ERROR:  syntax error at or near ";" at character 62
+2025-03-04 15:29:40.923 AEDT [490272] STATEMENT:  create or replace view Q3(cheese,maker)
+	as
+	-- your code here
+	;
+2025-03-04 15:29:40.923 AEDT [490272] ERROR:  syntax error at or near ";" at character 67
+2025-03-04 15:29:40.923 AEDT [490272] STATEMENT:  create or replace view Q4(hardness,ncheeses)
+	as
+	-- your code here
+	;
+2025-03-04 15:29:40.923 AEDT [490272] ERROR:  syntax error at or near ";" at character 55
+2025-03-04 15:29:40.923 AEDT [490272] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-04 15:29:40.923 AEDT [490272] ERROR:  syntax error at or near ";" at character 57
+2025-03-04 15:29:40.923 AEDT [490272] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-04 15:29:40.924 AEDT [490272] ERROR:  syntax error at or near ";" at character 87
+2025-03-04 15:29:40.924 AEDT [490272] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-04 15:33:43.279 AEDT [491222] ERROR:  syntax error at or near ";" at character 43
+2025-03-04 15:33:43.279 AEDT [491222] STATEMENT:  select c.name, m.name
+	FROM cheeses c
+	JOIN ;
+2025-03-04 15:34:24.127 AEDT [472698] LOG:  checkpoint starting: time
+2025-03-04 15:34:26.533 AEDT [472698] LOG:  checkpoint complete: wrote 25 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.406 s, sync=0.001 s, total=2.407 s; sync files=20, longest=0.001 s, average=0.001 s; distance=116 kB, estimate=116 kB; lsn=0/3799020, redo lsn=0/3798FC8
+2025-03-04 15:36:09.018 AEDT [491397] ERROR:  missing FROM-clause entry for table "c" at character 53
+2025-03-04 15:36:09.018 AEDT [491397] STATEMENT:  select c.name, m.name
+	FROM cheeses
+	JOIN makers m on c.made_by = m.id
+	WHERE s.notes = 'crumbly'
+	ORDER BY c.name;
+2025-03-04 15:36:24.760 AEDT [491397] ERROR:  missing FROM-clause entry for table "s" at character 78
+2025-03-04 15:36:24.760 AEDT [491397] STATEMENT:  select c.name, m.name
+	FROM cheeses c
+	JOIN makers m on c.made_by = m.id
+	WHERE s.notes = 'crumbly'
+	ORDER BY c.name;
+2025-03-04 15:37:21.243 AEDT [491397] ERROR:  missing FROM-clause entry for table "styles" at character 78
+2025-03-04 15:37:21.243 AEDT [491397] STATEMENT:  select c.name, m.name
+	FROM cheeses c
+	JOIN makers m on c.made_by = m.id
+	WHERE styles.notes = 'crumbly'
+	ORDER BY c.name;
+2025-03-04 15:37:45.073 AEDT [491397] ERROR:  column "styles" does not exist at character 24
+2025-03-04 15:37:45.073 AEDT [491397] HINT:  Perhaps you meant to reference the column "c.style".
+2025-03-04 15:37:45.073 AEDT [491397] STATEMENT:  select c.name, m.name, styles
+	FROM cheeses c
+	JOIN makers m on c.made_by = m.id
+	WHERE styles.notes = 'crumbly'
+	ORDER BY c.name;
+2025-03-04 15:38:00.976 AEDT [491397] ERROR:  missing FROM-clause entry for table "s" at character 78
+2025-03-04 15:38:00.976 AEDT [491397] STATEMENT:  select c.name, m.name
+	FROM cheeses c
+	JOIN makers m on c.made_by = m.id
+	WHERE s.notes = 'crumbly'
+	ORDER BY c.name;
+2025-03-04 15:39:46.548 AEDT [492570] ERROR:  syntax error at or near ";" at character 67
+2025-03-04 15:39:46.548 AEDT [492570] STATEMENT:  create or replace view Q4(hardness,ncheeses)
+	as
+	-- your code here
+	;
+2025-03-04 15:39:46.548 AEDT [492570] ERROR:  syntax error at or near ";" at character 55
+2025-03-04 15:39:46.548 AEDT [492570] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-04 15:39:46.548 AEDT [492570] ERROR:  syntax error at or near ";" at character 57
+2025-03-04 15:39:46.548 AEDT [492570] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-04 15:39:46.548 AEDT [492570] ERROR:  syntax error at or near ";" at character 87
+2025-03-04 15:39:46.548 AEDT [492570] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-04 15:40:09.705 AEDT [472698] LOG:  checkpoint starting: immediate force wait
+2025-03-04 15:40:09.706 AEDT [472698] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=139 kB, estimate=139 kB; lsn=0/37BBCF0, redo lsn=0/37BBC98
+2025-03-04 15:41:11.111 AEDT [493050] ERROR:  relation "q3" does not exist at character 15
+2025-03-04 15:41:11.111 AEDT [493050] STATEMENT:  select * from q3;
+2025-03-04 15:41:30.680 AEDT [493589] ERROR:  syntax error at or near ";" at character 67
+2025-03-04 15:41:30.680 AEDT [493589] STATEMENT:  create or replace view Q4(hardness,ncheeses)
+	as
+	-- your code here
+	;
+2025-03-04 15:41:30.681 AEDT [493589] ERROR:  syntax error at or near ";" at character 55
+2025-03-04 15:41:30.681 AEDT [493589] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-04 15:41:30.681 AEDT [493589] ERROR:  syntax error at or near ";" at character 57
+2025-03-04 15:41:30.681 AEDT [493589] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-04 15:41:30.681 AEDT [493589] ERROR:  syntax error at or near ";" at character 87
+2025-03-04 15:41:30.681 AEDT [493589] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-04 15:44:37.869 AEDT [494143] ERROR:  column "cheese" does not exist at character 29
+2025-03-04 15:44:37.869 AEDT [494143] STATEMENT:  select * from cheeses where cheese = 'Endeavour Blue';
+2025-03-04 15:45:09.806 AEDT [472698] LOG:  checkpoint starting: time
+2025-03-04 15:45:56.896 AEDT [494143] ERROR:  syntax error at or near ";" at character 24
+2025-03-04 15:45:56.896 AEDT [494143] STATEMENT:  select c.name, m.name,
+	;
+2025-03-04 15:46:44.361 AEDT [472698] LOG:  checkpoint complete: wrote 947 buffers (5.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=94.553 s, sync=0.002 s, total=94.556 s; sync files=317, longest=0.001 s, average=0.001 s; distance=4394 kB, estimate=4394 kB; lsn=0/3C067F0, redo lsn=0/3C06760
+2025-03-04 15:49:46.035 AEDT [494143] ERROR:  syntax error at or near "JOIN" at character 1
+2025-03-04 15:49:46.035 AEDT [494143] STATEMENT:  JOIN cheeses AND styles;
+2025-03-04 15:49:49.370 AEDT [494143] ERROR:  syntax error at or near "clear" at character 1
+2025-03-04 15:49:49.370 AEDT [494143] STATEMENT:  clear
+	select;
+2025-03-04 15:49:51.967 AEDT [494143] ERROR:  syntax error at or near "clear" at character 1
+2025-03-04 15:49:51.967 AEDT [494143] STATEMENT:  clear
+	;
+2025-03-04 15:49:54.738 AEDT [494143] ERROR:  syntax error at or near "clear" at character 1
+2025-03-04 15:49:54.738 AEDT [494143] STATEMENT:  clear
+	;
+2025-03-04 15:51:18.398 AEDT [495458] ERROR:  SELECT * with no tables specified is not valid at character 8
+2025-03-04 15:51:18.398 AEDT [495458] STATEMENT:  select *;
+2025-03-04 15:51:21.169 AEDT [495458] ERROR:  syntax error at or near "clear" at character 1
+2025-03-04 15:51:21.169 AEDT [495458] STATEMENT:  clear
+	s;
+2025-03-04 15:51:22.501 AEDT [495458] ERROR:  syntax error at or near "clear" at character 1
+2025-03-04 15:51:22.501 AEDT [495458] STATEMENT:  clear
+	;
+2025-03-04 15:52:28.405 AEDT [496030] FATAL:  database "ass21" does not exist
+2025-03-04 15:56:15.888 AEDT [472697] LOG:  received smart shutdown request
+2025-03-04 15:56:15.894 AEDT [472697] LOG:  received SIGHUP, reloading configuration files
+2025-03-04 15:56:15.896 AEDT [472697] LOG:  background worker "logical replication launcher" (PID 472703) exited with exit code 1
+2025-03-04 15:56:15.896 AEDT [472698] LOG:  shutting down
+2025-03-04 15:56:15.897 AEDT [472698] LOG:  checkpoint starting: shutdown immediate
+2025-03-04 15:56:15.897 AEDT [472698] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=3955 kB; lsn=0/3C068A0, redo lsn=0/3C068A0
+2025-03-04 15:56:15.906 AEDT [472697] LOG:  database system is shut down
+2025-03-04 19:07:26.284 AEDT [552214] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-04 19:07:26.284 AEDT [552214] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-04 19:07:26.285 AEDT [552217] LOG:  database system was shut down at 2025-03-04 15:56:15 AEDT
+2025-03-04 19:07:26.288 AEDT [552214] LOG:  database system is ready to accept connections
+2025-03-04 19:12:26.337 AEDT [552215] LOG:  checkpoint starting: time
+2025-03-04 19:12:26.639 AEDT [552215] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.302 s, sync=0.001 s, total=0.303 s; sync files=4, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/3C069A8, redo lsn=0/3C06950
+2025-03-04 19:54:42.170 AEDT [564964] ERROR:  relation "q3" already exists
+2025-03-04 19:54:42.170 AEDT [564964] STATEMENT:  CREATE VIEW Q3 AS
+	SELECT 
+	    c.name AS cheese,
+	    m.name AS maker
+	FROM 
+	    Cheeses c
+	JOIN 
+	    Styles s ON c.style = s.id
+	JOIN 
+	    Makers m ON c.made_by = m.id
+	WHERE 
+	    s.notes ILIKE '%crumbly%';
+2025-03-04 19:55:13.407 AEDT [564964] ERROR:  syntax error at or near "ls" at character 1
+2025-03-04 19:55:13.407 AEDT [564964] STATEMENT:  ls
+	;
+2025-03-04 19:55:54.406 AEDT [565133] ERROR:  relation "q3" already exists
+2025-03-04 19:55:54.406 AEDT [565133] STATEMENT:  CREATE VIEW Q3 AS
+	SELECT 
+	    c.name AS cheese,
+	    m.name AS maker
+	FROM 
+	    Cheeses c
+	JOIN 
+	    Styles s ON c.style = s.id
+	JOIN 
+	    Makers m ON c.made_by = m.id
+	WHERE 
+	    s.notes ILIKE '%crumbly%';
+2025-03-04 20:03:01.506 AEDT [552214] LOG:  received smart shutdown request
+2025-03-04 20:03:01.507 AEDT [552214] LOG:  received SIGHUP, reloading configuration files
+2025-03-04 20:03:01.508 AEDT [552214] LOG:  background worker "logical replication launcher" (PID 552220) exited with exit code 1
+2025-03-04 20:03:01.509 AEDT [552215] LOG:  shutting down
+2025-03-04 20:03:01.509 AEDT [552215] LOG:  checkpoint starting: shutdown immediate
+2025-03-04 20:03:01.511 AEDT [552215] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/3C06A58, redo lsn=0/3C06A58
+2025-03-04 20:03:01.515 AEDT [552214] LOG:  database system is shut down
+2025-03-04 20:06:56.786 AEDT [567952] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-04 20:06:56.786 AEDT [567952] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-04 20:06:56.788 AEDT [567955] LOG:  database system was shut down at 2025-03-04 20:03:01 AEDT
+2025-03-04 20:06:56.790 AEDT [567952] LOG:  database system is ready to accept connections
+2025-03-04 20:10:54.501 AEDT [568921] ERROR:  syntax error at or near "ls" at character 1
+2025-03-04 20:10:54.501 AEDT [568921] STATEMENT:  ls
+	;
+2025-03-04 20:10:59.460 AEDT [568921] ERROR:  syntax error at or near "rm" at character 1
+2025-03-04 20:10:59.460 AEDT [568921] STATEMENT:  rm q3
+	;
+2025-03-04 20:11:28.231 AEDT [569399] ERROR:  syntax error at or near "dropdb" at character 1
+2025-03-04 20:11:28.231 AEDT [569399] STATEMENT:  dropdb q3
+	;
+2025-03-04 20:11:32.338 AEDT [569399] ERROR:  syntax error at or near "ls" at character 1
+2025-03-04 20:11:32.338 AEDT [569399] STATEMENT:  ls
+	;
+2025-03-04 20:11:56.838 AEDT [567953] LOG:  checkpoint starting: time
+2025-03-04 20:11:56.840 AEDT [567953] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/3C06B60, redo lsn=0/3C06B08
+2025-03-04 20:11:57.540 AEDT [569399] ERROR:  "q3" is not a table
+2025-03-04 20:11:57.540 AEDT [569399] HINT:  Use DROP VIEW to remove a view.
+2025-03-04 20:11:57.540 AEDT [569399] STATEMENT:  DROP TABLE q3;
+2025-03-04 20:12:07.019 AEDT [569399] ERROR:  relation "q3" does not exist at character 15
+2025-03-04 20:12:07.019 AEDT [569399] STATEMENT:  select * from q3;
+2025-03-04 20:12:16.910 AEDT [569715] ERROR:  syntax error at or near ";" at character 67
+2025-03-04 20:12:16.910 AEDT [569715] STATEMENT:  create or replace view Q4(hardness,ncheeses)
+	as
+	-- your code here
+	;
+2025-03-04 20:12:16.910 AEDT [569715] ERROR:  syntax error at or near ";" at character 55
+2025-03-04 20:12:16.910 AEDT [569715] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-04 20:12:16.910 AEDT [569715] ERROR:  syntax error at or near ";" at character 57
+2025-03-04 20:12:16.910 AEDT [569715] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-04 20:12:16.910 AEDT [569715] ERROR:  syntax error at or near ";" at character 87
+2025-03-04 20:12:16.910 AEDT [569715] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-04 20:16:56.887 AEDT [567953] LOG:  checkpoint starting: time
+2025-03-04 20:16:59.595 AEDT [567953] LOG:  checkpoint complete: wrote 28 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.707 s, sync=0.001 s, total=2.709 s; sync files=21, longest=0.001 s, average=0.001 s; distance=141 kB, estimate=141 kB; lsn=0/3C2A020, redo lsn=0/3C29FB0
+2025-03-04 20:30:06.206 AEDT [567952] LOG:  received smart shutdown request
+2025-03-04 20:30:06.206 AEDT [567952] LOG:  received SIGHUP, reloading configuration files
+2025-03-04 20:30:06.208 AEDT [567952] LOG:  background worker "logical replication launcher" (PID 567958) exited with exit code 1
+2025-03-04 20:30:06.209 AEDT [567953] LOG:  shutting down
+2025-03-04 20:30:06.209 AEDT [567953] LOG:  checkpoint starting: shutdown immediate
+2025-03-04 20:30:06.210 AEDT [567953] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=127 kB; lsn=0/3C2A0D0, redo lsn=0/3C2A0D0
+2025-03-04 20:30:06.217 AEDT [567952] LOG:  database system is shut down
+2025-03-04 21:27:46.239 AEDT [589573] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-04 21:27:46.239 AEDT [589573] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-04 21:27:46.241 AEDT [589576] LOG:  database system was shut down at 2025-03-04 20:30:06 AEDT
+2025-03-04 21:27:46.244 AEDT [589573] LOG:  database system is ready to accept connections
+2025-03-04 21:32:46.293 AEDT [589574] LOG:  checkpoint starting: time
+2025-03-04 21:32:46.295 AEDT [589574] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/3C2A1D8, redo lsn=0/3C2A180
+2025-03-04 21:44:34.359 AEDT [592289] ERROR:  column "hard" does not exist at character 53
+2025-03-04 21:44:34.359 AEDT [592289] STATEMENT:  select count(hardness) from styles where hardness = "hard";
+2025-03-04 22:07:22.514 AEDT [592289] ERROR:  syntax error at or near "MIN" at character 1
+2025-03-04 22:07:22.514 AEDT [592289] STATEMENT:  MIN
+	;
+2025-03-04 22:14:07.241 AEDT [600190] ERROR:  column "styles.hardness" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-03-04 22:14:07.241 AEDT [600190] STATEMENT:  select hardness, COUNT(*) as ncheeses
+	FROM STYLES
+	GROUP BY notes;
+2025-03-04 22:14:08.970 AEDT [600190] ERROR:  syntax error at or near "l" at character 1
+2025-03-04 22:14:08.970 AEDT [600190] STATEMENT:  l
+	select hardness, COUNT(*) as ncheeses
+	FROM STYLES
+	GROUP BY notes;
+2025-03-04 22:14:16.279 AEDT [600190] ERROR:  column "styles.hardness" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-03-04 22:14:16.279 AEDT [600190] STATEMENT:  select hardness, COUNT(*) as ncheeses
+	FROM STYLES
+	GROUP BY notes;
+2025-03-04 22:14:35.824 AEDT [600484] ERROR:  column "styles.hardness" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-03-04 22:14:35.824 AEDT [600484] STATEMENT:  select hardness, COUNT(*) as ncheeses
+	FROM STYLES
+	GROUP BY notes;
+2025-03-04 22:14:59.026 AEDT [600484] ERROR:  column "styles.hardness" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-03-04 22:14:59.026 AEDT [600484] STATEMENT:  select hardness, COUNT(*) as ncheeses
+	FROM styles
+	GROUP BY notes;
+2025-03-04 22:24:56.745 AEDT [589573] LOG:  received smart shutdown request
+2025-03-04 22:24:56.747 AEDT [589573] LOG:  received SIGHUP, reloading configuration files
+2025-03-04 22:24:56.749 AEDT [589573] LOG:  background worker "logical replication launcher" (PID 589579) exited with exit code 1
+2025-03-04 22:24:56.749 AEDT [589574] LOG:  shutting down
+2025-03-04 22:24:56.749 AEDT [589574] LOG:  checkpoint starting: shutdown immediate
+2025-03-04 22:24:56.750 AEDT [589574] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/3C2A288, redo lsn=0/3C2A288
+2025-03-04 22:24:56.755 AEDT [589573] LOG:  database system is shut down
+2025-03-06 19:22:09.731 AEDT [1163767] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-06 19:22:09.731 AEDT [1163767] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-06 19:22:09.733 AEDT [1163770] LOG:  database system was shut down at 2025-03-04 22:24:56 AEDT
+2025-03-06 19:22:09.735 AEDT [1163767] LOG:  database system is ready to accept connections
+2025-03-06 19:22:42.058 AEDT [1163767] LOG:  received smart shutdown request
+2025-03-06 19:22:42.061 AEDT [1163767] LOG:  received SIGHUP, reloading configuration files
+2025-03-06 19:22:42.061 AEDT [1163767] LOG:  background worker "logical replication launcher" (PID 1163773) exited with exit code 1
+2025-03-06 19:22:42.062 AEDT [1163768] LOG:  shutting down
+2025-03-06 19:22:42.062 AEDT [1163768] LOG:  checkpoint starting: shutdown immediate
+2025-03-06 19:22:42.064 AEDT [1163768] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/3C2A338, redo lsn=0/3C2A338
+2025-03-06 19:22:42.067 AEDT [1163767] LOG:  database system is shut down
+2025-03-06 19:25:25.085 AEDT [1164771] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-06 19:25:25.086 AEDT [1164771] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-06 19:25:25.088 AEDT [1164774] LOG:  database system was shut down at 2025-03-06 19:22:42 AEDT
+2025-03-06 19:25:25.090 AEDT [1164771] LOG:  database system is ready to accept connections
+2025-03-06 19:26:19.056 AEDT [1165037] ERROR:  syntax error at or near ";" at character 55
+2025-03-06 19:26:19.056 AEDT [1165037] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-06 19:27:03.172 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:27:03.175 AEDT [1164772] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.002 s, sync=0.001 s, total=0.004 s; sync files=12, longest=0.001 s, average=0.001 s; distance=4380 kB, estimate=4380 kB; lsn=0/40715F8, redo lsn=0/40715A0
+2025-03-06 19:27:03.269 AEDT [1165519] ERROR:  syntax error at or near ";" at character 55
+2025-03-06 19:27:03.269 AEDT [1165519] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-06 19:28:11.586 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:28:11.587 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4382 kB, estimate=4382 kB; lsn=0/44B9178, redo lsn=0/44B9120
+2025-03-06 19:28:11.679 AEDT [1166041] ERROR:  syntax error at or near ";" at character 55
+2025-03-06 19:28:11.679 AEDT [1166041] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-06 19:29:58.798 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:29:58.799 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4384 kB, estimate=4384 kB; lsn=0/4901470, redo lsn=0/4901418
+2025-03-06 19:29:58.892 AEDT [1166295] ERROR:  syntax error at or near ";" at character 55
+2025-03-06 19:29:58.892 AEDT [1166295] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-06 19:31:10.359 AEDT [1166458] FATAL:  database "testdb" does not exist
+2025-03-06 19:31:17.957 AEDT [1166468] ERROR:  syntax error at or near "psql" at character 1
+2025-03-06 19:31:17.957 AEDT [1166468] STATEMENT:  psql -d testdb -f yourfile.sql
+	
+	;
+2025-03-06 19:31:26.169 AEDT [1166706] FATAL:  database "testdb" does not exist
+2025-03-06 19:31:39.716 AEDT [1166736] ERROR:  syntax error at or near ";" at character 55
+2025-03-06 19:31:39.716 AEDT [1166736] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-06 19:31:39.716 AEDT [1166736] ERROR:  syntax error at or near ";" at character 57
+2025-03-06 19:31:39.716 AEDT [1166736] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-06 19:31:39.716 AEDT [1166736] ERROR:  syntax error at or near ";" at character 87
+2025-03-06 19:31:39.716 AEDT [1166736] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-06 19:32:30.418 AEDT [1166852] ERROR:  syntax error at or near "create" at character 107
+2025-03-06 19:32:30.418 AEDT [1166852] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	-- Q6: Country that makes the most styles of cheese
+	create or replace view Q6(country)
+	as
+	-- your code here
+	-- Q7: Cheeses that are aged outside the "standard" aging period
+	create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+2025-03-06 19:32:55.815 AEDT [1166909] ERROR:  syntax error at or near ";" at character 55
+2025-03-06 19:32:55.815 AEDT [1166909] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-06 19:32:55.815 AEDT [1166909] ERROR:  syntax error at or near "create" at character 122
+2025-03-06 19:32:55.815 AEDT [1166909] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	-- Q7: Cheeses that are aged outside the "standard" aging period
+	create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+2025-03-06 19:34:58.806 AEDT [1164772] LOG:  checkpoint starting: time
+2025-03-06 19:35:13.003 AEDT [1167202] ERROR:  syntax error at or near "create" at character 107
+2025-03-06 19:35:13.003 AEDT [1167202] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	-- Q6: Country that makes the most styles of cheese
+	create or replace view Q6(country)
+	as
+	-- your code here
+	-- Q7: Cheeses that are aged outside the "standard" aging period
+	create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+2025-03-06 19:36:37.369 AEDT [1164772] LOG:  checkpoint complete: wrote 987 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=98.561 s, sync=0.002 s, total=98.564 s; sync files=346, longest=0.001 s, average=0.001 s; distance=4607 kB, estimate=4607 kB; lsn=0/4D93398, redo lsn=0/4D81260
+2025-03-06 19:42:54.407 AEDT [1168977] ERROR:  column c.name_by does not exist at character 130
+2025-03-06 19:42:54.407 AEDT [1168977] HINT:  Perhaps you meant to reference the column "c.made_by".
+2025-03-06 19:42:54.407 AEDT [1168977] STATEMENT:  create or replace view Q3(cheese,maker)
+	as
+	SELECT c.name, m.name
+	FROM cheeses c
+	JOIN styles s ON c.style = s.id
+	JOIN makers m ON c.name_by = m.id
+	WHERE s.notes ILIKE '%crumbly%'
+	ORDER BY c.name
+	;
+2025-03-06 19:42:54.408 AEDT [1168977] ERROR:  syntax error at or near ";" at character 55
+2025-03-06 19:42:54.408 AEDT [1168977] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-06 19:42:54.408 AEDT [1168977] ERROR:  syntax error at or near ";" at character 57
+2025-03-06 19:42:54.408 AEDT [1168977] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-06 19:42:54.408 AEDT [1168977] ERROR:  syntax error at or near ";" at character 87
+2025-03-06 19:42:54.408 AEDT [1168977] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-06 19:42:54.410 AEDT [1168977] ERROR:  syntax error at end of input at character 100
+2025-03-06 19:42:54.410 AEDT [1168977] STATEMENT:  create or replace function Q8(partial_name text)
+		returns setof MakerPlace
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:42:54.411 AEDT [1168977] ERROR:  syntax error at end of input at character 99
+2025-03-06 19:42:54.411 AEDT [1168977] STATEMENT:  create or replace function Q9(partial_name text)
+		returns setof OneCheese
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:43:45.845 AEDT [1169093] ERROR:  syntax error at or near ";" at character 55
+2025-03-06 19:43:45.845 AEDT [1169093] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-06 19:43:45.845 AEDT [1169093] ERROR:  syntax error at or near ";" at character 57
+2025-03-06 19:43:45.845 AEDT [1169093] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-06 19:43:45.845 AEDT [1169093] ERROR:  syntax error at or near ";" at character 87
+2025-03-06 19:43:45.845 AEDT [1169093] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-06 19:43:45.847 AEDT [1169093] ERROR:  syntax error at end of input at character 100
+2025-03-06 19:43:45.847 AEDT [1169093] STATEMENT:  create or replace function Q8(partial_name text)
+		returns setof MakerPlace
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:43:45.848 AEDT [1169093] ERROR:  syntax error at end of input at character 99
+2025-03-06 19:43:45.848 AEDT [1169093] STATEMENT:  create or replace function Q9(partial_name text)
+		returns setof OneCheese
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:44:00.177 AEDT [1169122] ERROR:  syntax error at or near ";" at character 55
+2025-03-06 19:44:00.177 AEDT [1169122] STATEMENT:  create or replace view Q5(style)
+	as
+	-- your code here
+	;
+2025-03-06 19:44:00.178 AEDT [1169122] ERROR:  syntax error at or near ";" at character 57
+2025-03-06 19:44:00.178 AEDT [1169122] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-06 19:44:00.178 AEDT [1169122] ERROR:  syntax error at or near ";" at character 87
+2025-03-06 19:44:00.178 AEDT [1169122] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-06 19:44:00.179 AEDT [1169122] ERROR:  syntax error at end of input at character 100
+2025-03-06 19:44:00.179 AEDT [1169122] STATEMENT:  create or replace function Q8(partial_name text)
+		returns setof MakerPlace
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:44:00.180 AEDT [1169122] ERROR:  syntax error at end of input at character 99
+2025-03-06 19:44:00.180 AEDT [1169122] STATEMENT:  create or replace function Q9(partial_name text)
+		returns setof OneCheese
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:44:28.864 AEDT [1169191] ERROR:  syntax error at or near ";" at character 57
+2025-03-06 19:44:28.864 AEDT [1169191] STATEMENT:  create or replace view Q6(country)
+	as
+	-- your code here
+	;
+2025-03-06 19:44:28.864 AEDT [1169191] ERROR:  syntax error at or near ";" at character 87
+2025-03-06 19:44:28.864 AEDT [1169191] STATEMENT:  create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+	as
+	-- your code here
+	;
+2025-03-06 19:44:28.865 AEDT [1169191] ERROR:  syntax error at end of input at character 100
+2025-03-06 19:44:28.865 AEDT [1169191] STATEMENT:  create or replace function Q8(partial_name text)
+		returns setof MakerPlace
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:44:28.867 AEDT [1169191] ERROR:  syntax error at end of input at character 99
+2025-03-06 19:44:28.867 AEDT [1169191] STATEMENT:  create or replace function Q9(partial_name text)
+		returns setof OneCheese
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:44:52.660 AEDT [1169245] ERROR:  syntax error at end of input at character 100
+2025-03-06 19:44:52.660 AEDT [1169245] STATEMENT:  create or replace function Q8(partial_name text)
+		returns setof MakerPlace
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:44:52.660 AEDT [1169245] ERROR:  syntax error at end of input at character 99
+2025-03-06 19:44:52.660 AEDT [1169245] STATEMENT:  create or replace function Q9(partial_name text)
+		returns setof OneCheese
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:44:58.570 AEDT [1164772] LOG:  checkpoint starting: time
+2025-03-06 19:45:03.883 AEDT [1164772] LOG:  checkpoint complete: wrote 54 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.312 s, sync=0.001 s, total=5.314 s; sync files=28, longest=0.001 s, average=0.001 s; distance=347 kB, estimate=4181 kB; lsn=0/4DD8018, redo lsn=0/4DD7F70
+2025-03-06 19:45:09.410 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:45:09.411 AEDT [1164772] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=7 kB, estimate=3764 kB; lsn=0/4DD9DB8, redo lsn=0/4DD9D60
+2025-03-06 19:45:09.505 AEDT [1169338] ERROR:  syntax error at end of input at character 100
+2025-03-06 19:45:09.505 AEDT [1169338] STATEMENT:  create or replace function Q8(partial_name text)
+		returns setof MakerPlace
+	as $$
+	-- your code here
+	$$ language plpgsql;
+2025-03-06 19:48:18.223 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:48:18.225 AEDT [1164772] LOG:  checkpoint complete: wrote 23 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.002 s, sync=0.001 s, total=0.003 s; sync files=15, longest=0.001 s, average=0.001 s; distance=4439 kB, estimate=4439 kB; lsn=0/522FB60, redo lsn=0/522FB08
+2025-03-06 19:48:18.330 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:48:18.331 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4390 kB, estimate=4434 kB; lsn=0/5679478, redo lsn=0/5679420
+2025-03-06 19:48:18.564 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:48:18.565 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4392 kB, estimate=4430 kB; lsn=0/5AC35C0, redo lsn=0/5AC3568
+2025-03-06 19:48:18.729 AEDT [1170196] ERROR:  relation "q5" does not exist at character 15
+2025-03-06 19:48:18.729 AEDT [1170196] STATEMENT:  SELECT * FROM Q5 ORDER BY Style;
+2025-03-06 19:48:18.739 AEDT [1170201] ERROR:  relation "q6" does not exist at character 15
+2025-03-06 19:48:18.739 AEDT [1170201] STATEMENT:  SELECT * FROM Q6 ORDER BY Country;
+2025-03-06 19:48:18.749 AEDT [1170206] ERROR:  relation "q7" does not exist at character 15
+2025-03-06 19:48:18.749 AEDT [1170206] STATEMENT:  SELECT * FROM Q7 ORDER BY Cheese, Maker;
+2025-03-06 19:48:18.762 AEDT [1170211] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 19:48:18.762 AEDT [1170211] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:48:18.762 AEDT [1170211] STATEMENT:  SELECT * FROM Q8('bert');
+2025-03-06 19:48:18.772 AEDT [1170216] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 19:48:18.772 AEDT [1170216] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:48:18.772 AEDT [1170216] STATEMENT:  SELECT * FROM Q8('dairy');
+2025-03-06 19:48:18.782 AEDT [1170221] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 19:48:18.782 AEDT [1170221] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:48:18.782 AEDT [1170221] STATEMENT:  SELECT * FROM Q8('ee');
+2025-03-06 19:48:18.793 AEDT [1170226] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 19:48:18.793 AEDT [1170226] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:48:18.793 AEDT [1170226] STATEMENT:  SELECT * FROM Q8('o');
+2025-03-06 19:48:18.805 AEDT [1170231] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 19:48:18.805 AEDT [1170231] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:48:18.805 AEDT [1170231] STATEMENT:  SELECT * FROM Q9('ick');
+2025-03-06 19:48:18.816 AEDT [1170236] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 19:48:18.816 AEDT [1170236] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:48:18.816 AEDT [1170236] STATEMENT:  SELECT * FROM Q9('dairy');
+2025-03-06 19:48:18.828 AEDT [1170241] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 19:48:18.828 AEDT [1170241] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:48:18.828 AEDT [1170241] STATEMENT:  SELECT * FROM Q9('xx');
+2025-03-06 19:48:18.840 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:48:18.842 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4414 kB, estimate=4428 kB; lsn=0/5F12E68, redo lsn=0/5F12E10
+2025-03-06 19:53:18.942 AEDT [1164772] LOG:  checkpoint starting: time
+2025-03-06 19:53:19.946 AEDT [1164772] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.003 s, sync=0.001 s, total=1.005 s; sync files=11, longest=0.001 s, average=0.001 s; distance=36 kB, estimate=3989 kB; lsn=0/5F1C120, redo lsn=0/5F1C090
+2025-03-06 19:56:12.791 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:56:12.794 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4387 kB, estimate=4387 kB; lsn=0/6364D38, redo lsn=0/6364CE0
+2025-03-06 19:56:13.023 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:56:13.026 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4389 kB, estimate=4389 kB; lsn=0/67AE2F0, redo lsn=0/67AE298
+2025-03-06 19:56:13.185 AEDT [1172134] ERROR:  relation "q5" does not exist at character 15
+2025-03-06 19:56:13.185 AEDT [1172134] STATEMENT:  SELECT * FROM Q5 ORDER BY Style;
+2025-03-06 19:56:13.196 AEDT [1172139] ERROR:  relation "q6" does not exist at character 15
+2025-03-06 19:56:13.196 AEDT [1172139] STATEMENT:  SELECT * FROM Q6 ORDER BY Country;
+2025-03-06 19:56:13.206 AEDT [1172144] ERROR:  relation "q7" does not exist at character 15
+2025-03-06 19:56:13.206 AEDT [1172144] STATEMENT:  SELECT * FROM Q7 ORDER BY Cheese, Maker;
+2025-03-06 19:56:13.219 AEDT [1172149] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 19:56:13.219 AEDT [1172149] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:56:13.219 AEDT [1172149] STATEMENT:  SELECT * FROM Q8('bert');
+2025-03-06 19:56:13.229 AEDT [1172154] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 19:56:13.229 AEDT [1172154] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:56:13.229 AEDT [1172154] STATEMENT:  SELECT * FROM Q8('dairy');
+2025-03-06 19:56:13.239 AEDT [1172159] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 19:56:13.239 AEDT [1172159] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:56:13.239 AEDT [1172159] STATEMENT:  SELECT * FROM Q8('ee');
+2025-03-06 19:56:13.250 AEDT [1172164] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 19:56:13.250 AEDT [1172164] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:56:13.250 AEDT [1172164] STATEMENT:  SELECT * FROM Q8('o');
+2025-03-06 19:56:13.262 AEDT [1172169] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 19:56:13.262 AEDT [1172169] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:56:13.262 AEDT [1172169] STATEMENT:  SELECT * FROM Q9('ick');
+2025-03-06 19:56:13.272 AEDT [1172174] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 19:56:13.272 AEDT [1172174] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:56:13.272 AEDT [1172174] STATEMENT:  SELECT * FROM Q9('dairy');
+2025-03-06 19:56:13.285 AEDT [1172179] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 19:56:13.285 AEDT [1172179] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 19:56:13.285 AEDT [1172179] STATEMENT:  SELECT * FROM Q9('xx');
+2025-03-06 19:56:13.298 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 19:56:13.299 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4405 kB, estimate=4405 kB; lsn=0/6BFB828, redo lsn=0/6BFB7D0
+2025-03-06 20:01:13.400 AEDT [1164772] LOG:  checkpoint starting: time
+2025-03-06 20:01:14.003 AEDT [1164772] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.603 s, sync=0.001 s, total=0.604 s; sync files=6, longest=0.001 s, average=0.001 s; distance=19 kB, estimate=3966 kB; lsn=0/6C00738, redo lsn=0/6C006E0
+2025-03-06 20:01:46.462 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 20:01:46.464 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4386 kB, estimate=4386 kB; lsn=0/7049208, redo lsn=0/70491B0
+2025-03-06 20:01:46.693 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 20:01:46.695 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4388 kB, estimate=4388 kB; lsn=0/7492568, redo lsn=0/7492510
+2025-03-06 20:01:46.854 AEDT [1173605] ERROR:  relation "q5" does not exist at character 15
+2025-03-06 20:01:46.854 AEDT [1173605] STATEMENT:  SELECT * FROM Q5 ORDER BY Style;
+2025-03-06 20:01:46.864 AEDT [1173610] ERROR:  relation "q6" does not exist at character 15
+2025-03-06 20:01:46.864 AEDT [1173610] STATEMENT:  SELECT * FROM Q6 ORDER BY Country;
+2025-03-06 20:01:46.873 AEDT [1173615] ERROR:  relation "q7" does not exist at character 15
+2025-03-06 20:01:46.873 AEDT [1173615] STATEMENT:  SELECT * FROM Q7 ORDER BY Cheese, Maker;
+2025-03-06 20:01:46.887 AEDT [1173620] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 20:01:46.887 AEDT [1173620] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:01:46.887 AEDT [1173620] STATEMENT:  SELECT * FROM Q8('bert');
+2025-03-06 20:01:46.897 AEDT [1173625] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 20:01:46.897 AEDT [1173625] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:01:46.897 AEDT [1173625] STATEMENT:  SELECT * FROM Q8('dairy');
+2025-03-06 20:01:46.907 AEDT [1173630] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 20:01:46.907 AEDT [1173630] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:01:46.907 AEDT [1173630] STATEMENT:  SELECT * FROM Q8('ee');
+2025-03-06 20:01:46.918 AEDT [1173635] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 20:01:46.918 AEDT [1173635] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:01:46.918 AEDT [1173635] STATEMENT:  SELECT * FROM Q8('o');
+2025-03-06 20:01:46.930 AEDT [1173640] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 20:01:46.930 AEDT [1173640] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:01:46.930 AEDT [1173640] STATEMENT:  SELECT * FROM Q9('ick');
+2025-03-06 20:01:46.941 AEDT [1173645] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 20:01:46.941 AEDT [1173645] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:01:46.941 AEDT [1173645] STATEMENT:  SELECT * FROM Q9('dairy');
+2025-03-06 20:01:46.953 AEDT [1173650] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 20:01:46.953 AEDT [1173650] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:01:46.953 AEDT [1173650] STATEMENT:  SELECT * FROM Q9('xx');
+2025-03-06 20:01:46.965 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 20:01:46.966 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4410 kB, estimate=4410 kB; lsn=0/78E1080, redo lsn=0/78E1028
+2025-03-06 20:01:50.191 AEDT [1173682] ERROR:  column "hard_val" does not exist at character 8
+2025-03-06 20:01:50.191 AEDT [1173682] STATEMENT:  SELECT hard_val, COUNT(*) AS cheese_count
+	FROM cheeses
+	GROUP BY hard_val;
+2025-03-06 20:02:01.488 AEDT [1173682] ERROR:  column "hard_val" does not exist at character 8
+2025-03-06 20:02:01.488 AEDT [1173682] STATEMENT:  SELECT hard_val, COUNT(*) AS cheese_count
+	FROM styles
+	GROUP BY hard_val;
+2025-03-06 20:02:30.102 AEDT [1173682] ERROR:  column "hardval" does not exist at character 8
+2025-03-06 20:02:30.102 AEDT [1173682] STATEMENT:  SELECT HardVal, COUNT(*) AS cheese_count
+	FROM styles
+	GROUP BY HardVal;
+2025-03-06 20:03:36.544 AEDT [1173682] ERROR:  column "hard_val" does not exist at character 14
+2025-03-06 20:03:36.544 AEDT [1173682] STATEMENT:  SELECT LOWER(hard_val), COUNT(*) AS cheese_count
+	FROM cheeses
+	GROUP BY LOWER(hard_val);
+2025-03-06 20:03:56.125 AEDT [1173682] ERROR:  function lower(hardval) does not exist at character 8
+2025-03-06 20:03:56.125 AEDT [1173682] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:03:56.125 AEDT [1173682] STATEMENT:  SELECT LOWER(hardness), COUNT(*) AS cheese_count
+	FROM styles
+	GROUP BY LOWER(hardness);
+2025-03-06 20:06:47.067 AEDT [1164772] LOG:  checkpoint starting: time
+2025-03-06 20:06:47.870 AEDT [1164772] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.803 s, sync=0.001 s, total=0.804 s; sync files=9, longest=0.001 s, average=0.001 s; distance=28 kB, estimate=3972 kB; lsn=0/78E8468, redo lsn=0/78E8410
+2025-03-06 20:25:33.328 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 20:25:33.332 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.004 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4387 kB, estimate=4387 kB; lsn=0/7D31130, redo lsn=0/7D310D8
+2025-03-06 20:25:33.563 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 20:25:33.565 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4389 kB, estimate=4389 kB; lsn=0/817A620, redo lsn=0/817A5C8
+2025-03-06 20:25:33.728 AEDT [1178784] ERROR:  relation "q5" does not exist at character 15
+2025-03-06 20:25:33.728 AEDT [1178784] STATEMENT:  SELECT * FROM Q5 ORDER BY Style;
+2025-03-06 20:25:33.738 AEDT [1178789] ERROR:  relation "q6" does not exist at character 15
+2025-03-06 20:25:33.738 AEDT [1178789] STATEMENT:  SELECT * FROM Q6 ORDER BY Country;
+2025-03-06 20:25:33.748 AEDT [1178794] ERROR:  relation "q7" does not exist at character 15
+2025-03-06 20:25:33.748 AEDT [1178794] STATEMENT:  SELECT * FROM Q7 ORDER BY Cheese, Maker;
+2025-03-06 20:25:33.761 AEDT [1178799] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 20:25:33.761 AEDT [1178799] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:25:33.761 AEDT [1178799] STATEMENT:  SELECT * FROM Q8('bert');
+2025-03-06 20:25:33.772 AEDT [1178804] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 20:25:33.772 AEDT [1178804] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:25:33.772 AEDT [1178804] STATEMENT:  SELECT * FROM Q8('dairy');
+2025-03-06 20:25:33.782 AEDT [1178809] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 20:25:33.782 AEDT [1178809] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:25:33.782 AEDT [1178809] STATEMENT:  SELECT * FROM Q8('ee');
+2025-03-06 20:25:33.794 AEDT [1178814] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 20:25:33.794 AEDT [1178814] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:25:33.794 AEDT [1178814] STATEMENT:  SELECT * FROM Q8('o');
+2025-03-06 20:25:33.806 AEDT [1178819] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 20:25:33.806 AEDT [1178819] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:25:33.806 AEDT [1178819] STATEMENT:  SELECT * FROM Q9('ick');
+2025-03-06 20:25:33.817 AEDT [1178824] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 20:25:33.817 AEDT [1178824] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:25:33.817 AEDT [1178824] STATEMENT:  SELECT * FROM Q9('dairy');
+2025-03-06 20:25:33.829 AEDT [1178829] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 20:25:33.829 AEDT [1178829] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 20:25:33.829 AEDT [1178829] STATEMENT:  SELECT * FROM Q9('xx');
+2025-03-06 20:25:33.842 AEDT [1164772] LOG:  checkpoint starting: immediate force wait
+2025-03-06 20:25:33.845 AEDT [1164772] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4411 kB, estimate=4411 kB; lsn=0/85C9380, redo lsn=0/85C9328
+2025-03-06 20:30:33.906 AEDT [1164772] LOG:  checkpoint starting: time
+2025-03-06 20:30:34.409 AEDT [1164772] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.502 s, sync=0.001 s, total=0.504 s; sync files=6, longest=0.001 s, average=0.001 s; distance=12 kB, estimate=3971 kB; lsn=0/85CC420, redo lsn=0/85CC3C8
+2025-03-06 20:44:56.206 AEDT [1182411] ERROR:  column "style_name" does not exist at character 8
+2025-03-06 20:44:56.206 AEDT [1182411] STATEMENT:  select style_name from styles;
+2025-03-06 20:47:08.180 AEDT [1182411] ERROR:  syntax error at or near "ass1" at character 58
+2025-03-06 20:47:08.180 AEDT [1182411] STATEMENT:  Select s.name as style_name, Count(c.id) as cheese_count
+	ass1-# from styles s
+	ass1-# join cheeses c on c.style = s.id
+	ass1-# group by s.name
+	ass1-# order by cheese_count DESC
+	Select s.name as style_name, Count(c.id) as cheese_count
+	ass1-# from styles s
+	ass1-# join cheeses c on c.style = s.id
+	ass1-# group by s.name
+	ass1-# order by cheese_count DESC
+	select s.name as style_name, COUNT(c.id) as cheese_count
+	from styles s
+	join cheeses c on c.style = s.id
+	group by s.name
+	order by cheese_count DESC;
+2025-03-06 20:47:15.991 AEDT [1182411] ERROR:  syntax error at or near "ass1" at character 58
+2025-03-06 20:47:15.991 AEDT [1182411] STATEMENT:  Select s.name as style_name, Count(c.id) as cheese_count
+	ass1-# from styles s
+	ass1-# join cheeses c on c.style = s.id
+	ass1-# group by s.name
+	ass1-# order by cheese_count DESC
+	Select s.name as style_name, Count(c.id) as cheese_count
+	ass1-# from styles s
+	ass1-# join cheeses c on c.style = s.id
+	ass1-# group by s.name
+	ass1-# order by cheese_count DESC
+	select s.name as style_name, COUNT(c.id) as cheese_count
+	from styles s
+	join cheeses c on c.style = s.id
+	group by s.name
+	order by cheese_count DESC;
+2025-03-06 20:47:18.789 AEDT [1182411] ERROR:  syntax error at or near "ass1" at character 58
+2025-03-06 20:47:18.789 AEDT [1182411] STATEMENT:  Select s.name as style_name, Count(c.id) as cheese_count
+	ass1-# from styles s
+	ass1-# join cheeses c on c.style = s.id
+	ass1-# group by s.name
+	ass1-# order by cheese_count DESC
+	Select s.name as style_name, Count(c.id) as cheese_count
+	ass1-# from styles s
+	ass1-# join cheeses c on c.style = s.id
+	ass1-# group by s.name
+	ass1-# order by cheese_count DESC
+	select s.name as style_name, COUNT(c.id) as cheese_count
+	from styles s
+	join cheeses c on c.style = s.id
+	group by s.name
+	order by cheese_count DESC;
+2025-03-06 20:48:20.361 AEDT [1184023] ERROR:  column "cheese_count" does not exist at character 114
+2025-03-06 20:48:20.361 AEDT [1184023] STATEMENT:  select s.name as style_name, COUNT(c.id)
+	from styles s
+	join cheeses c on c.style = s.id
+	group by s.name
+	order by cheese_count DESC
+	;
+2025-03-06 20:48:52.078 AEDT [1184023] ERROR:  aggregate function calls cannot be nested at character 118
+2025-03-06 20:48:52.078 AEDT [1184023] STATEMENT:  select s.name as style_name, COUNT(c.id)
+	from styles s
+	join cheeses c on c.style = s.id
+	group by s.name
+	order by MAX(COUNT(c.id)) DESC
+	;
+2025-03-06 20:49:02.596 AEDT [1184023] ERROR:  syntax error at or near "SELECT" at character 105
+2025-03-06 20:49:02.596 AEDT [1184023] STATEMENT:  select s.name as style_name, COUNT(c.id)
+	from styles s
+	join cheeses c on c.style = s.id
+	group by s.name
+	SELECT MAX(COUNT(c.id)) DESC
+	;
+2025-03-06 21:05:03.274 AEDT [1164771] LOG:  received smart shutdown request
+2025-03-06 21:05:03.281 AEDT [1164771] LOG:  received SIGHUP, reloading configuration files
+2025-03-06 21:05:03.283 AEDT [1164771] LOG:  background worker "logical replication launcher" (PID 1164777) exited with exit code 1
+2025-03-06 21:05:03.284 AEDT [1164772] LOG:  shutting down
+2025-03-06 21:05:03.284 AEDT [1164772] LOG:  checkpoint starting: shutdown immediate
+2025-03-06 21:05:03.286 AEDT [1164772] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=3574 kB; lsn=0/85CC4D0, redo lsn=0/85CC4D0
+2025-03-06 21:05:03.298 AEDT [1164771] LOG:  database system is shut down
+2025-03-06 21:28:50.062 AEDT [1201180] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-06 21:28:50.062 AEDT [1201180] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-06 21:28:50.064 AEDT [1201183] LOG:  database system was shut down at 2025-03-06 21:05:03 AEDT
+2025-03-06 21:28:50.066 AEDT [1201180] LOG:  database system is ready to accept connections
+2025-03-06 21:29:40.571 AEDT [1201200] ERROR:  syntax error at or near "WHERE" at character 50
+2025-03-06 21:29:40.571 AEDT [1201200] STATEMENT:  select c.style, s.id FROM cheeses 
+	JOIN styles s WHERE c.style = s.id;
+2025-03-06 21:29:47.180 AEDT [1201200] ERROR:  missing FROM-clause entry for table "c" at character 53
+2025-03-06 21:29:47.180 AEDT [1201200] STATEMENT:  select c.style, s.id FROM cheeses 
+	JOIN styles s ON c.style = s.id;
+2025-03-06 21:30:40.094 AEDT [1201200] ERROR:  column "c.style" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-03-06 21:30:40.094 AEDT [1201200] STATEMENT:  select c.style, s.id FROM cheeses c 
+	JOIN styles s ON c.style = s.id
+	group by s.name;
+2025-03-06 21:31:01.265 AEDT [1201200] ERROR:  column "c.style" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-03-06 21:31:01.265 AEDT [1201200] STATEMENT:  select c.style, s.id FROM styles s 
+	JOIN cheeses c ON c.style = s.id
+	group by s.name;
+2025-03-06 21:33:50.162 AEDT [1201181] LOG:  checkpoint starting: time
+2025-03-06 21:33:50.264 AEDT [1201181] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.101 s, sync=0.001 s, total=0.102 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/85CC5D8, redo lsn=0/85CC580
+2025-03-06 21:41:12.040 AEDT [1201200] ERROR:  syntax error at or near "." at character 27
+2025-03-06 21:41:12.040 AEDT [1201200] STATEMENT:  select c.style, s.SELECT s.name AS style_name, COUNT(c.id) AS cheese_count
+	FROM Styles s
+	JOIN Cheeses c ON c.style = s.id
+	GROUP BY s.name
+	ORDER BY cheese_count DESC
+	LIMIT 1;
+2025-03-06 21:41:12.041 AEDT [1201200] ERROR:  syntax error at or near "id" at character 1
+2025-03-06 21:41:12.041 AEDT [1201200] STATEMENT:  id FROM styles s 
+	JOIN cheeses c ON c.style = s.id
+	group by s.name;
+2025-03-06 21:45:14.186 AEDT [1201181] LOG:  checkpoint starting: immediate force wait
+2025-03-06 21:45:14.188 AEDT [1201181] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4399 kB, estimate=4399 kB; lsn=0/8A182A8, redo lsn=0/8A18250
+2025-03-06 21:45:14.420 AEDT [1201181] LOG:  checkpoint starting: immediate force wait
+2025-03-06 21:45:14.422 AEDT [1201181] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4401 kB, estimate=4401 kB; lsn=0/8E64950, redo lsn=0/8E648F8
+2025-03-06 21:45:14.590 AEDT [1204974] ERROR:  relation "q6" does not exist at character 15
+2025-03-06 21:45:14.590 AEDT [1204974] STATEMENT:  SELECT * FROM Q6 ORDER BY Country;
+2025-03-06 21:45:14.600 AEDT [1204979] ERROR:  relation "q7" does not exist at character 15
+2025-03-06 21:45:14.600 AEDT [1204979] STATEMENT:  SELECT * FROM Q7 ORDER BY Cheese, Maker;
+2025-03-06 21:45:14.614 AEDT [1204984] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 21:45:14.614 AEDT [1204984] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 21:45:14.614 AEDT [1204984] STATEMENT:  SELECT * FROM Q8('bert');
+2025-03-06 21:45:14.623 AEDT [1204989] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 21:45:14.623 AEDT [1204989] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 21:45:14.623 AEDT [1204989] STATEMENT:  SELECT * FROM Q8('dairy');
+2025-03-06 21:45:14.635 AEDT [1204994] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 21:45:14.635 AEDT [1204994] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 21:45:14.635 AEDT [1204994] STATEMENT:  SELECT * FROM Q8('ee');
+2025-03-06 21:45:14.646 AEDT [1204999] ERROR:  function q8(unknown) does not exist at character 15
+2025-03-06 21:45:14.646 AEDT [1204999] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 21:45:14.646 AEDT [1204999] STATEMENT:  SELECT * FROM Q8('o');
+2025-03-06 21:45:14.657 AEDT [1205004] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 21:45:14.657 AEDT [1205004] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 21:45:14.657 AEDT [1205004] STATEMENT:  SELECT * FROM Q9('ick');
+2025-03-06 21:45:14.668 AEDT [1205009] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 21:45:14.668 AEDT [1205009] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 21:45:14.668 AEDT [1205009] STATEMENT:  SELECT * FROM Q9('dairy');
+2025-03-06 21:45:14.681 AEDT [1205015] ERROR:  function q9(unknown) does not exist at character 15
+2025-03-06 21:45:14.681 AEDT [1205015] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-03-06 21:45:14.681 AEDT [1205015] STATEMENT:  SELECT * FROM Q9('xx');
+2025-03-06 21:45:14.692 AEDT [1201181] LOG:  checkpoint starting: immediate force wait
+2025-03-06 21:45:14.694 AEDT [1201181] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4423 kB, estimate=4423 kB; lsn=0/92B6810, redo lsn=0/92B67B8
+2025-03-06 21:46:02.708 AEDT [1201180] LOG:  received smart shutdown request
+2025-03-06 21:46:02.708 AEDT [1201180] LOG:  received SIGHUP, reloading configuration files
+2025-03-06 21:46:02.709 AEDT [1201180] LOG:  background worker "logical replication launcher" (PID 1201186) exited with exit code 1
+2025-03-06 21:46:02.709 AEDT [1201181] LOG:  shutting down
+2025-03-06 21:46:02.710 AEDT [1201181] LOG:  checkpoint starting: shutdown immediate
+2025-03-06 21:46:02.711 AEDT [1201181] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=9, longest=0.001 s, average=0.001 s; distance=29 kB, estimate=3984 kB; lsn=0/92BDE48, redo lsn=0/92BDE48
+2025-03-06 21:46:02.716 AEDT [1201180] LOG:  database system is shut down
+2025-03-07 06:01:32.007 AEDT [1279805] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-07 06:01:32.007 AEDT [1279805] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-07 06:01:32.009 AEDT [1279808] LOG:  database system was shut down at 2025-03-06 21:46:02 AEDT
+2025-03-07 06:01:32.011 AEDT [1279805] LOG:  database system is ready to accept connections
+2025-03-07 06:02:34.433 AEDT [1279822] ERROR:  column "maker" does not exist at character 8
+2025-03-07 06:02:34.433 AEDT [1279822] STATEMENT:  select maker, founded
+	order by founded
+	;
+2025-03-07 06:02:47.022 AEDT [1279822] ERROR:  column "maker" does not exist at character 8
+2025-03-07 06:02:47.022 AEDT [1279822] STATEMENT:  select maker, founded from cheeses
+	order by founded;
+2025-03-07 06:03:19.008 AEDT [1279822] ERROR:  column "maker" does not exist at character 8
+2025-03-07 06:03:19.008 AEDT [1279822] STATEMENT:  select maker, founded from makers
+	order by founded;
+2025-03-07 06:04:21.433 AEDT [1279822] ERROR:  column "makers.name" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-03-07 06:04:21.433 AEDT [1279822] STATEMENT:  select name as maker, MIN(founded) As smallestprice from makers;
+2025-03-07 06:04:55.948 AEDT [1280045] ERROR:  column "maker" does not exist at character 8
+2025-03-07 06:04:55.948 AEDT [1280045] STATEMENT:  select maker, founded from makers
+	order by founded;
+2025-03-07 06:05:03.657 AEDT [1280045] ERROR:  column "makers.name" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-03-07 06:05:03.657 AEDT [1280045] STATEMENT:  select name as maker, MIN(founded) As smallestprice from makers;
+2025-03-07 06:06:32.106 AEDT [1279806] LOG:  checkpoint starting: time
+2025-03-07 06:06:32.209 AEDT [1279806] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.101 s, sync=0.001 s, total=0.103 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/92BDF50, redo lsn=0/92BDEF8
+2025-03-07 06:31:56.672 AEDT [1282904] ERROR:  syntax error at or near "where" at character 49
+2025-03-07 06:31:56.672 AEDT [1282904] STATEMENT:  select c.style, s.name
+	FROM cheeses
+	JOIN styles where c.style = s.id;
+2025-03-07 06:32:03.407 AEDT [1282904] ERROR:  missing FROM-clause entry for table "c" at character 52
+2025-03-07 06:32:03.407 AEDT [1282904] STATEMENT:  select c.style, s.name
+	FROM cheeses
+	JOIN styles ON c.style = s.id;
+2025-03-07 06:33:55.838 AEDT [1282904] ERROR:  syntax error at or near "select" at character 93
+2025-03-07 06:33:55.838 AEDT [1282904] STATEMENT:  select c.style, s.name
+	FROM cheeses c
+	JOIN styles s ON c.style = s.id
+	WHERE s.name = c.name
+	select c.style, s.name
+	FROM cheeses c
+	JOIN styles s ON c.style = s.id
+	WHERE s.name = c.name;
+2025-03-07 06:51:33.106 AEDT [1279806] LOG:  checkpoint starting: time
+2025-03-07 06:51:35.112 AEDT [1279806] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.005 s, sync=0.001 s, total=2.006 s; sync files=12, longest=0.001 s, average=0.001 s; distance=110 kB, estimate=110 kB; lsn=0/92D97B0, redo lsn=0/92D9720
+2025-03-07 07:10:33.797 AEDT [1287451] ERROR:  syntax error at or near ";" at character 156
+2025-03-07 07:10:33.797 AEDT [1287451] STATEMENT:  WITH CheeseCounts AS (
+	    SELECT s.name AS style, COUNT(c.id) AS cheese_count
+	    FROM Styles s
+	    JOIN Cheeses c ON c.style = s.id
+	    GROUP BY s.name
+	);
+2025-03-07 07:11:15.158 AEDT [1287451] ERROR:  syntax error at or near "SUM" at character 1
+2025-03-07 07:11:15.158 AEDT [1287451] STATEMENT:  SUM
+	1 
+	2
+	;
+2025-03-07 07:11:33.513 AEDT [1279806] LOG:  checkpoint starting: time
+2025-03-07 07:11:33.615 AEDT [1279806] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.101 s, sync=0.001 s, total=0.103 s; sync files=1, longest=0.001 s, average=0.001 s; distance=8 kB, estimate=99 kB; lsn=0/92DB7F0, redo lsn=0/92DB798
+2025-03-07 07:27:18.581 AEDT [1279805] LOG:  received smart shutdown request
+2025-03-07 07:27:18.582 AEDT [1279805] LOG:  received SIGHUP, reloading configuration files
+2025-03-07 07:27:18.583 AEDT [1279805] LOG:  background worker "logical replication launcher" (PID 1279811) exited with exit code 1
+2025-03-07 07:27:18.584 AEDT [1279806] LOG:  shutting down
+2025-03-07 07:27:18.585 AEDT [1279806] LOG:  checkpoint starting: shutdown immediate
+2025-03-07 07:27:18.586 AEDT [1279806] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=89 kB; lsn=0/92DB8A0, redo lsn=0/92DB8A0
+2025-03-07 07:27:18.593 AEDT [1279805] LOG:  database system is shut down
+2025-03-08 16:05:45.799 AEDT [1680536] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-08 16:05:45.800 AEDT [1680536] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-08 16:05:45.801 AEDT [1680539] LOG:  database system was shut down at 2025-03-07 07:27:18 AEDT
+2025-03-08 16:05:45.803 AEDT [1680536] LOG:  database system is ready to accept connections
+2025-03-08 16:05:49.483 AEDT [1680557] FATAL:  lock file "postmaster.pid" already exists
+2025-03-08 16:05:49.483 AEDT [1680557] HINT:  Is another postmaster (PID 1680536) running in data directory "/localstorage/z5477862/pgsql/data"?
+2025-03-08 16:10:21.116 AEDT [1680571] ERROR:  missing FROM-clause entry for table "m" at character 43
+2025-03-08 16:10:21.116 AEDT [1680571] STATEMENT:  select m.id FROM makers 
+	join places p ON m.located_in = p.id;
+2025-03-08 16:10:40.457 AEDT [1680571] ERROR:  column m.country does not exist at character 8
+2025-03-08 16:10:40.457 AEDT [1680571] HINT:  Perhaps you meant to reference the column "p.country".
+2025-03-08 16:10:40.457 AEDT [1680571] STATEMENT:  select m.country FROM makers m 
+	join places p ON m.located_in = p.id;
+2025-03-08 16:10:45.851 AEDT [1680537] LOG:  checkpoint starting: time
+2025-03-08 16:10:45.954 AEDT [1680537] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.001 s, total=0.103 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/92DB9A8, redo lsn=0/92DB950
+2025-03-08 16:10:46.473 AEDT [1680571] ERROR:  column m.country does not exist at character 8
+2025-03-08 16:10:46.473 AEDT [1680571] HINT:  Perhaps you meant to reference the column "p.country".
+2025-03-08 16:10:46.473 AEDT [1680571] STATEMENT:  select m.country FROM makers m 
+	join places p ON m.located_in = p.id;
+2025-03-08 16:23:11.768 AEDT [1684456] ERROR:  syntax error at or near ";" at character 83
+2025-03-08 16:23:11.768 AEDT [1684456] STATEMENT:  select p.name as place, c.name as cheese
+	FROM places p
+	join styles s on p.id = s.
+	;
+2025-03-08 16:26:59.058 AEDT [1690841] ERROR:  column p.name does not exist at character 8
+2025-03-08 16:26:59.058 AEDT [1690841] HINT:  Perhaps you meant to reference the column "s.name".
+2025-03-08 16:26:59.058 AEDT [1690841] STATEMENT:  select p.name, p.region from places p
+	JOIN styles s ON p.id = s.origin;
+2025-03-08 16:40:46.374 AEDT [1680537] LOG:  checkpoint starting: time
+2025-03-08 16:40:48.781 AEDT [1680537] LOG:  checkpoint complete: wrote 25 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.406 s, sync=0.001 s, total=2.407 s; sync files=21, longest=0.001 s, average=0.001 s; distance=123 kB, estimate=123 kB; lsn=0/92FA880, redo lsn=0/92FA828
+2025-03-08 16:44:28.721 AEDT [1698035] ERROR:  syntax error at or near "le" at character 1
+2025-03-08 16:44:28.721 AEDT [1698035] STATEMENT:  le = s.id;
+2025-03-08 16:59:33.211 AEDT [1680536] LOG:  received smart shutdown request
+2025-03-08 16:59:33.213 AEDT [1680536] LOG:  received SIGHUP, reloading configuration files
+2025-03-08 16:59:33.214 AEDT [1680536] LOG:  background worker "logical replication launcher" (PID 1680542) exited with exit code 1
+2025-03-08 16:59:33.218 AEDT [1680537] LOG:  shutting down
+2025-03-08 16:59:33.218 AEDT [1680537] LOG:  checkpoint starting: shutdown immediate
+2025-03-08 16:59:33.219 AEDT [1680537] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=111 kB; lsn=0/92FA930, redo lsn=0/92FA930
+2025-03-08 16:59:33.223 AEDT [1680536] LOG:  database system is shut down
+2025-03-10 14:31:10.668 AEDT [2457046] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-10 14:31:10.668 AEDT [2457046] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-10 14:31:10.670 AEDT [2457049] LOG:  database system was shut down at 2025-03-08 16:59:33 AEDT
+2025-03-10 14:31:10.672 AEDT [2457046] LOG:  database system is ready to accept connections
+2025-03-10 14:36:10.711 AEDT [2457047] LOG:  checkpoint starting: time
+2025-03-10 14:36:10.713 AEDT [2457047] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/92FAA38, redo lsn=0/92FA9E0
+2025-03-10 14:40:34.157 AEDT [2462246] FATAL:  role "Employees" does not exist
+2025-03-10 14:40:36.201 AEDT [2462257] FATAL:  lock file "postmaster.pid" already exists
+2025-03-10 14:40:36.201 AEDT [2462257] HINT:  Is another postmaster (PID 2457046) running in data directory "/localstorage/z5477862/pgsql/data"?
+2025-03-10 14:40:54.265 AEDT [2462338] FATAL:  role "Employees" does not exist
+2025-03-10 14:40:56.123 AEDT [2462354] FATAL:  lock file "postmaster.pid" already exists
+2025-03-10 14:40:56.123 AEDT [2462354] HINT:  Is another postmaster (PID 2457046) running in data directory "/localstorage/z5477862/pgsql/data"?
+2025-03-10 14:41:01.343 AEDT [2457046] LOG:  received fast shutdown request
+2025-03-10 14:41:01.343 AEDT [2457046] LOG:  aborting any active transactions
+2025-03-10 14:41:01.345 AEDT [2457046] LOG:  background worker "logical replication launcher" (PID 2457052) exited with exit code 1
+2025-03-10 14:41:01.345 AEDT [2457047] LOG:  shutting down
+2025-03-10 14:41:01.346 AEDT [2457047] LOG:  checkpoint starting: shutdown immediate
+2025-03-10 14:41:01.347 AEDT [2457047] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/92FAAE8, redo lsn=0/92FAAE8
+2025-03-10 14:41:01.350 AEDT [2457046] LOG:  database system is shut down
+2025-03-10 14:41:03.437 AEDT [2462394] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-10 14:41:03.437 AEDT [2462394] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-03-10 14:41:03.438 AEDT [2462397] LOG:  database system was shut down at 2025-03-10 14:41:01 AEDT
+2025-03-10 14:41:03.440 AEDT [2462394] LOG:  database system is ready to accept connections
+2025-03-10 14:41:14.088 AEDT [2462475] FATAL:  role "Employees" does not exist
+2025-03-10 14:41:21.774 AEDT [2462717] FATAL:  role "Employees" does not exist
+2025-03-10 14:41:23.378 AEDT [2462735] FATAL:  lock file "postmaster.pid" already exists
+2025-03-10 14:41:23.378 AEDT [2462735] HINT:  Is another postmaster (PID 2462394) running in data directory "/localstorage/z5477862/pgsql/data"?
+2025-03-10 14:41:30.505 AEDT [2462773] FATAL:  database "createdb" does not exist
+2025-03-10 14:41:33.564 AEDT [2462785] FATAL:  database "z5477862" does not exist
+2025-03-10 14:41:56.384 AEDT [2462925] FATAL:  role "Employees" does not exist
+2025-03-10 14:46:03.534 AEDT [2462395] LOG:  checkpoint starting: time
+2025-03-10 14:46:03.537 AEDT [2462395] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/92FABF0, redo lsn=0/92FAB98
+2025-03-10 15:45:54.871 AEDT [2462394] LOG:  received fast shutdown request
+2025-03-10 15:45:54.871 AEDT [2462394] LOG:  aborting any active transactions
+2025-03-10 15:45:54.872 AEDT [2462394] LOG:  background worker "logical replication launcher" (PID 2462400) exited with exit code 1
+2025-03-10 15:45:54.873 AEDT [2462395] LOG:  shutting down
+2025-03-10 15:45:54.873 AEDT [2462395] LOG:  checkpoint starting: shutdown immediate
+2025-03-10 15:45:54.875 AEDT [2462395] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/92FACA0, redo lsn=0/92FACA0
+2025-03-10 15:45:54.879 AEDT [2462394] LOG:  database system is shut down
