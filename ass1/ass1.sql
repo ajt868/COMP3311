@@ -64,17 +64,32 @@ WHERE cheese_count = (SELECT MAX(cheese_count) FROM CheeseCounts);
 
 -- Q6: Country that makes the most styles of cheese
 
---create or replace view Q6(country)
---as
--- your code here
-;
+create or replace view Q6(country)
+as
+WITH StyleCounts AS (
+    SELECT p.country, COUNT(DISTINCT s.id) AS distinct_styles
+    FROM places p
+    JOIN makers m ON m.located_in = p.id
+    JOIN cheeses c ON c.made_by = m.id
+    JOIN styles s ON c.style = s.id
+    GROUP BY p.country
+)
+SELECT country
+FROM StyleCounts
+WHERE distinct_styles = (SELECT MAX(distinct_styles) FROM StyleCounts);
 
 -- Q7: Cheeses that are aged outside the "standard" aging period
 
---create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
---as
--- your code here
+create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+as
+SELECT c.name AS cheese, m.name AS maker, c.aged_for AS aged, s.min_aging, s.max_aging 
+FROM cheeses c
+JOIN makers m ON c.made_by = m.id
+JOIN styles s ON c.style = s.id
+WHERE c.aged_for < s.min_aging OR c.aged_for > s.max_aging
+ORDER BY c.name;
 ;
+-- Check whether I need to modify to accommodate different time units
 
 -- Q8: Return a list of cheesemakers matching a partial name, and their location
 
