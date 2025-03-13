@@ -1935,3 +1935,5 @@
 2025-03-13 23:23:09.424 AEDT [15620] STATEMENT:  SELECT * FROM Q9('xx');
 2025-03-13 23:23:09.437 AEDT [4192691] LOG:  checkpoint starting: immediate force wait
 2025-03-13 23:23:09.438 AEDT [4192691] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=10, longest=0.001 s, average=0.001 s; distance=4440 kB, estimate=4605 kB; lsn=0/BAB81F8, redo lsn=0/BAB81A0
+2025-03-13 23:28:09.538 AEDT [4192691] LOG:  checkpoint starting: time
+2025-03-13 23:28:10.742 AEDT [4192691] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.203 s, sync=0.001 s, total=1.205 s; sync files=10, longest=0.001 s, average=0.001 s; distance=32 kB, estimate=4148 kB; lsn=0/BAC04E0, redo lsn=0/BAC0488
