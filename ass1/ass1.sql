@@ -17,8 +17,7 @@ FROM cheeses c
 JOIN styles s ON c.style = s.id
 JOIN makers m ON c.made_by = m.id
 WHERE c.name = s.name
-ORDER BY c.name
-;
+ORDER BY c.name;
 
 -- Q3: Crumbly cheeses
 
@@ -29,8 +28,7 @@ FROM cheeses c
 JOIN styles s ON c.style = s.id
 JOIN makers m ON c.made_by = m.id
 WHERE s.notes ILIKE '%crumbly%'
-ORDER BY c.name
-;
+ORDER BY c.name;
 
 -- Q4: How many of each hardness level
 
@@ -60,7 +58,6 @@ WITH CheeseCounts AS (
 SELECT style
 FROM CheeseCounts
 WHERE cheese_count = (SELECT MAX(cheese_count) FROM CheeseCounts);
-;
 
 -- Q6: Country that makes the most styles of cheese
 
@@ -88,29 +85,50 @@ JOIN makers m ON c.made_by = m.id
 JOIN styles s ON c.style = s.id
 WHERE c.aged_for < s.min_aging OR c.aged_for > s.max_aging
 ORDER BY c.name;
-;
--- Check whether I need to modify to accommodate different time units
 
 -- Q8: Return a list of cheesemakers matching a partial name, and their location
 
---function if exists Q8;
---drop type if exists MakerPlace;
---create type MakerPlace as ( maker text, location text );
-
---create or replace function Q8(partial_name text)
---	returns setof MakerPlace
---as $$
--- your code here
---$$ language plpgsql;
+drop function if exists Q8;
+drop type if exists MakerType;
+create type MakerType as (maker text, location text);
+create or replace function Q8(partial_name text) returns SETOF MakerType as $$
+BEGIN
+        RETURN QUERY
+        SELECT  m.name AS maker,
+		TRIM(
+			COALESCE(NULLIF(p.town, '') || ', ', '') || 
+			COALESCE(NULLIF(p.region, '') || ', ', '') ||
+			COALESCE(NULLIF(p.country, ''), '')
+		) AS location
+        FROM makers m
+        JOIN places p ON m.located_in = p.id
+        WHERE m.name ILIKE '%' || partial_name || '%'
+        ORDER BY m.name;
+END;
+$$ language plpgsql;
 
 -- Q9: Lists of cheeses for cheesemakers matching a partial name
 
---drop function if exists Q9;
---drop type if exists OneCheese;
---create type OneCheese as ( maker text, cheese text, style text );
-
---create or replace function Q9(partial_name text)
---	returns setof OneCheese
---as $$
--- your code here
---$$ language plpgsql;
+drop function if exists Q9;
+drop type if exists OneCheese;
+create type OneCheese as ( maker text, cheese text, style text );
+create or replace function Q9(partial_name text)
+	returns setof OneCheese
+as $$
+BEGIN
+	RETURN QUERY
+	SELECT
+		CASE
+			WHEN ROW_NUMBER() OVER (PARTITION BY m.name ORDER BY c.name) = 1
+				THEN m.name
+			ELSE NULL
+		END AS maker,
+		c.name AS cheese, 
+		s.name AS style 
+	FROM makers m
+	JOIN cheeses c ON c.made_by = m.id
+	JOIN styles s ON s.id = c.style
+	WHERE m.name ILIKE '%' || partial_name || '%'
+	ORDER BY m.name, c.name;
+END;
+$$ language plpgsql;
