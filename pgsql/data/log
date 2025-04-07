@@ -1551,6 +1551,7 @@
 2025-03-10 15:45:54.873 AEDT [2462395] LOG:  checkpoint starting: shutdown immediate
 2025-03-10 15:45:54.875 AEDT [2462395] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/92FACA0, redo lsn=0/92FACA0
 2025-03-10 15:45:54.879 AEDT [2462394] LOG:  database system is shut down
+<<<<<<< HEAD
 2025-03-11 14:39:51.306 AEDT [2933849] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
 2025-03-11 14:39:51.307 AEDT [2933849] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
 2025-03-11 14:39:51.309 AEDT [2933852] LOG:  database system was shut down at 2025-03-10 15:45:54 AEDT
@@ -3331,3 +3332,5 @@
 2025-04-03 11:36:54.203 AEDT [1853919] LOG:  checkpoint starting: shutdown immediate
 2025-04-03 11:36:54.204 AEDT [1853919] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=7 kB, estimate=139296 kB; lsn=0/27867B70, redo lsn=0/27867B70
 2025-04-03 11:36:54.213 AEDT [1853918] LOG:  database system is shut down
+=======
+>>>>>>> 71cb7b00495e8160e78368bb4949ff92c54d3c68

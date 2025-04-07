@@ -17,7 +17,12 @@ FROM cheeses c
 JOIN styles s ON c.style = s.id
 JOIN makers m ON c.made_by = m.id
 WHERE c.name = s.name
+<<<<<<< HEAD
 ORDER BY c.name;
+=======
+ORDER BY c.name
+;
+>>>>>>> 71cb7b00495e8160e78368bb4949ff92c54d3c68
 
 -- Q3: Crumbly cheeses
 
@@ -28,7 +33,12 @@ FROM cheeses c
 JOIN styles s ON c.style = s.id
 JOIN makers m ON c.made_by = m.id
 WHERE s.notes ILIKE '%crumbly%'
+<<<<<<< HEAD
 ORDER BY c.name;
+=======
+ORDER BY c.name
+;
+>>>>>>> 71cb7b00495e8160e78368bb4949ff92c54d3c68
 
 -- Q4: How many of each hardness level
 
@@ -58,6 +68,7 @@ WITH CheeseCounts AS (
 SELECT style
 FROM CheeseCounts
 WHERE cheese_count = (SELECT MAX(cheese_count) FROM CheeseCounts);
+<<<<<<< HEAD
 
 -- Q6: Country that makes the most styles of cheese
 
@@ -132,3 +143,44 @@ BEGIN
 	ORDER BY m.name, c.name;
 END;
 $$ language plpgsql;
+=======
+;
+
+-- Q6: Country that makes the most styles of cheese
+
+--create or replace view Q6(country)
+--as
+-- your code here
+;
+
+-- Q7: Cheeses that are aged outside the "standard" aging period
+
+--create or replace view Q7(cheese,maker,aged,min_aging,max_aging)
+--as
+-- your code here
+;
+
+-- Q8: Return a list of cheesemakers matching a partial name, and their location
+
+--function if exists Q8;
+--drop type if exists MakerPlace;
+--create type MakerPlace as ( maker text, location text );
+
+--create or replace function Q8(partial_name text)
+--	returns setof MakerPlace
+--as $$
+-- your code here
+--$$ language plpgsql;
+
+-- Q9: Lists of cheeses for cheesemakers matching a partial name
+
+--drop function if exists Q9;
+--drop type if exists OneCheese;
+--create type OneCheese as ( maker text, cheese text, style text );
+
+--create or replace function Q9(partial_name text)
+--	returns setof OneCheese
+--as $$
+-- your code here
+--$$ language plpgsql;
+>>>>>>> 71cb7b00495e8160e78368bb4949ff92c54d3c68
