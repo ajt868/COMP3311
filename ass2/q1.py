@@ -7,11 +7,12 @@ COMP3311
 Assignment 2
 Pokemon Database
 
-Written by: <YOUR NAME HERE> <YOUR STUDENT ID HERE>
-Written on: <DATE HERE>
+Written by: Arjun Theyagarajan - z5477862
+Written on: 22-04-2025
 
 File Name: Q1.py
 """
+
 
 
 import sys
@@ -28,8 +29,35 @@ def main(db):
         print(USAGE)
         return 1
 
-    # TODO: your code here
+    #query = "select * from pkmon where "
+    studentQuery = '''
+    SELECT g.Name AS Game, COUNT(DISTINCT ig.Egg_group) AS Num_Distinct_Egg_Groups,
+        COUNT(DISTINCT p.ID) AS Num_Distinct_Pokemon
+    FROM Games g
+        JOIN Pokedex pd ON g.ID = pd.Game
+        JOIN Pokemon p ON pd.National_ID = p.ID
+        LEFT JOIN In_Group ig ON p.ID = ig.Pokemon
+        GROUP BY g.Name
+    ORDER BY g.Name;
+    '''
+    
+    try:
+        with db.cursor() as cur:
+            cur.execute(studentQuery)
+            results = cur.fetchall()
 
+            # Print header
+            print(f"{'GameName':<17} {'#EggGroup':<9} {'#Pokemon':<8}")
+
+            # Print each row
+            for game, egg_groups, pokemons in results:
+                print(f"{game:<17} {egg_groups:<9} {pokemons:<8}")
+
+    except psycopg2.Error as e:
+            print("Query execution error:", e)
+            return 1
+        
+    return 0
 
 if __name__ == '__main__':
     exit_code = 0
@@ -47,3 +75,5 @@ if __name__ == '__main__':
         if db is not None:
             db.close()
     sys.exit(exit_code)
+
+

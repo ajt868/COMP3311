@@ -3334,3 +3334,377 @@
 2025-04-03 11:36:54.213 AEDT [1853918] LOG:  database system is shut down
 =======
 >>>>>>> 71cb7b00495e8160e78368bb4949ff92c54d3c68
+2025-04-08 12:21:45.279 AEST [3701270] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-04-08 12:21:45.279 AEST [3701270] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-04-08 12:21:45.281 AEST [3701273] LOG:  database system was shut down at 2025-04-03 11:36:54 AEDT
+2025-04-08 12:21:45.284 AEST [3701270] LOG:  database system is ready to accept connections
+2025-04-08 12:21:47.610 AEST [3701296] FATAL:  lock file "postmaster.pid" already exists
+2025-04-08 12:21:47.610 AEST [3701296] HINT:  Is another postmaster (PID 3701270) running in data directory "/localstorage/z5477862/pgsql/data"?
+2025-04-08 12:21:50.421 AEST [3701270] LOG:  received fast shutdown request
+2025-04-08 12:21:50.421 AEST [3701270] LOG:  aborting any active transactions
+2025-04-08 12:21:50.423 AEST [3701270] LOG:  background worker "logical replication launcher" (PID 3701276) exited with exit code 1
+2025-04-08 12:21:50.423 AEST [3701271] LOG:  shutting down
+2025-04-08 12:21:50.423 AEST [3701271] LOG:  checkpoint starting: shutdown immediate
+2025-04-08 12:21:50.431 AEST [3701271] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 4 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.008 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/27867BE8, redo lsn=0/27867BE8
+2025-04-08 12:21:50.434 AEST [3701270] LOG:  database system is shut down
+2025-04-08 12:21:51.066 AEST [3701312] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-04-08 12:21:51.067 AEST [3701312] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-04-08 12:21:51.069 AEST [3701315] LOG:  database system was shut down at 2025-04-08 12:21:50 AEST
+2025-04-08 12:21:51.071 AEST [3701312] LOG:  database system is ready to accept connections
+2025-04-08 12:23:14.909 AEST [3701702] ERROR:  column "F*" does not exist at character 56
+2025-04-08 12:23:14.909 AEST [3701702] STATEMENT:  select * from egg_groups, games
+	where egg_groups ILIKE "F*";
+2025-04-08 12:23:24.006 AEST [3701702] ERROR:  column "F.*" does not exist at character 56
+2025-04-08 12:23:24.006 AEST [3701702] STATEMENT:  select * from egg_groups, games
+	where egg_groups ILIKE "F.*";
+2025-04-08 12:23:41.819 AEST [3701702] ERROR:  column "F.*" does not exist at character 61
+2025-04-08 12:23:41.819 AEST [3701702] STATEMENT:  select * from egg_groups, games
+	where egg_groups.name ILIKE "F.*";
+2025-04-08 12:23:52.620 AEST [3701702] ERROR:  column "Fairy" does not exist at character 57
+2025-04-08 12:23:52.620 AEST [3701702] STATEMENT:  select * from egg_groups, games
+	where egg_groups.name = "Fairy";
+2025-04-08 12:24:25.196 AEST [3701702] ERROR:  operator does not exist: text = integer at character 55
+2025-04-08 12:24:25.196 AEST [3701702] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2025-04-08 12:24:25.196 AEST [3701702] STATEMENT:  select * from egg_groups, games
+	where egg_groups.name = 2;
+2025-04-08 12:24:37.351 AEST [3701702] ERROR:  column "Dragon" does not exist at character 57
+2025-04-08 12:24:37.351 AEST [3701702] HINT:  Perhaps you meant to reference the column "games.region".
+2025-04-08 12:24:37.351 AEST [3701702] STATEMENT:  select * from egg_groups, games
+	where egg_groups.name = "Dragon";
+2025-04-08 12:26:51.098 AEST [3701313] LOG:  checkpoint starting: time
+2025-04-08 12:26:51.100 AEST [3701313] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/27867CF0, redo lsn=0/27867C98
+2025-04-08 13:45:15.132 AEST [3701312] LOG:  received smart shutdown request
+2025-04-08 13:45:15.134 AEST [3701312] LOG:  received SIGHUP, reloading configuration files
+2025-04-08 13:45:15.135 AEST [3701312] LOG:  background worker "logical replication launcher" (PID 3701318) exited with exit code 1
+2025-04-08 13:45:15.137 AEST [3701313] LOG:  shutting down
+2025-04-08 13:45:15.137 AEST [3701313] LOG:  checkpoint starting: shutdown immediate
+2025-04-08 13:45:15.139 AEST [3701313] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=1, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/27867DA0, redo lsn=0/27867DA0
+2025-04-08 13:45:15.145 AEST [3701312] LOG:  database system is shut down
+2025-04-08 14:23:35.370 AEST [3893672] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-04-08 14:23:35.370 AEST [3893672] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-04-08 14:23:35.372 AEST [3893675] LOG:  database system was shut down at 2025-04-08 13:45:15 AEST
+2025-04-08 14:23:35.375 AEST [3893672] LOG:  database system is ready to accept connections
+2025-04-08 14:24:46.865 AEST [3893916] ERROR:  relation "pkmon" does not exist at character 15
+2025-04-08 14:24:46.865 AEST [3893916] STATEMENT:  select * from pkmon;
+2025-04-08 14:26:52.172 AEST [3893916] ERROR:  syntax error at or near "clear" at character 1
+2025-04-08 14:26:52.172 AEST [3893916] STATEMENT:  clear
+	SELECT 
+	    g.Name AS Game,
+	    COUNT(DISTINCT ig.Egg_Group) AS Num_Distinct_Egg_Groups,
+	    COUNT(DISTINCT p.ID) AS Num_Distinct_Pokemon
+	FROM Games g
+	JOIN Pokedex pd ON g.ID = pd.Game
+	JOIN Pokemon p ON pd.National_ID = p.ID
+	LEFT JOIN In_Group ig ON p.ID = ig.Pokemon
+	GROUP BY g.Name
+	ORDER BY g.Name;
+2025-04-08 14:28:35.401 AEST [3893673] LOG:  checkpoint starting: time
+2025-04-08 14:28:35.604 AEST [3893673] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.202 s, sync=0.001 s, total=0.203 s; sync files=4, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/27867EA8, redo lsn=0/27867E50
+2025-04-08 14:49:05.685 AEST [3948288] ERROR:  operator does not exist: integer = text at character 73
+2025-04-08 14:49:05.685 AEST [3948288] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2025-04-08 14:49:05.685 AEST [3948288] STATEMENT:  select p.first_type, m.name from pokemon p
+	JOIN moves m ON p.first_type = m.name;
+2025-04-08 15:02:19.181 AEST [3948288] ERROR:  missing FROM-clause entry for table "m" at character 23
+2025-04-08 15:02:19.181 AEST [3948288] STATEMENT:  select COUNT(DISTINCT m.name), p.first_type FROM pokemon p
+	;
+2025-04-08 15:03:14.929 AEST [3948288] ERROR:  missing FROM-clause entry for table "lm" at character 81
+2025-04-08 15:03:14.929 AEST [3948288] STATEMENT:  select p.first_type, lm.learnt_by from learnable_moves
+	JOIN pokemon p ON p.ID = lm.learnt_by;
+2025-04-08 15:03:35.939 AEST [3948288] ERROR:  missing FROM-clause entry for table "lm" at character 81
+2025-04-08 15:03:35.939 AEST [3948288] STATEMENT:  select p.first_type, lm.learnt_by from learnable_moves
+	JOIN pokemon p ON p.ID = lm.learnt_by;
+2025-04-08 15:07:10.530 AEST [4006153] ERROR:  syntax error at or near "(" at character 6
+2025-04-08 15:07:10.530 AEST [4006153] STATEMENT:  WITH (SELECT mt.Name AS move_type, COUNT(DISTINCT m.ID) AS distinct_moves
+	    FROM Moves m
+	    JOIN Types mt ON m.Of_Type = mt.ID
+	    GROUP BY mt.Name;)
+	    SELECT p.Name AS pokemon_name, COUNT(DISTINCT lm.Learns) AS move_count
+	    FROM Pokemon p
+	    JOIN Learnable_Moves lm ON p.Pokemon_ID = lm.Learnt_By
+	    JOIN Moves m ON lm.Learns = m.ID
+	    WHERE p.First_Type = %s AND m.Of_Type = %s
+	    GROUP BY p.Name
+	    HAVING COUNT(DISTINCT lm.Learns) > 10;
+2025-04-08 15:07:30.554 AEST [4006153] ERROR:  syntax error at or near "%" at character 369
+2025-04-08 15:07:30.554 AEST [4006153] STATEMENT:  WITH move_counts AS (
+	    SELECT mt.Name AS move_type, COUNT(DISTINCT m.ID) AS distinct_moves
+	    FROM Moves m
+	    JOIN Types mt ON m.Of_Type = mt.ID
+	    GROUP BY mt.Name
+	)
+	SELECT p.Name AS pokemon_name, COUNT(DISTINCT lm.Learns) AS move_count
+	FROM Pokemon p
+	JOIN Learnable_Moves lm ON p.Pokemon_ID = lm.Learnt_By
+	JOIN Moves m ON lm.Learns = m.ID
+	WHERE p.First_Type = %s AND m.Of_Type = %s
+	GROUP BY p.Name
+	HAVING COUNT(DISTINCT lm.Learns) > 10;
+2025-04-08 15:07:32.687 AEST [4006153] ERROR:  syntax error at or near "%" at character 369
+2025-04-08 15:07:32.687 AEST [4006153] STATEMENT:  WITH move_counts AS (
+	    SELECT mt.Name AS move_type, COUNT(DISTINCT m.ID) AS distinct_moves
+	    FROM Moves m
+	    JOIN Types mt ON m.Of_Type = mt.ID
+	    GROUP BY mt.Name
+	)
+	SELECT p.Name AS pokemon_name, COUNT(DISTINCT lm.Learns) AS move_count
+	FROM Pokemon p
+	JOIN Learnable_Moves lm ON p.Pokemon_ID = lm.Learnt_By
+	JOIN Moves m ON lm.Learns = m.ID
+	WHERE p.First_Type = %s AND m.Of_Type = %s
+	GROUP BY p.Name
+	HAVING COUNT(DISTINCT lm.Learns) > 10;
+2025-04-08 15:08:00.629 AEST [4006153] ERROR:  column p.pokemon_id does not exist at character 287
+2025-04-08 15:08:00.629 AEST [4006153] STATEMENT:  WITH move_counts AS (
+	    SELECT mt.Name AS move_type, COUNT(DISTINCT m.ID) AS distinct_moves
+	    FROM Moves m
+	    JOIN Types mt ON m.Of_Type = mt.ID
+	    GROUP BY mt.Name
+	)
+	SELECT p.Name AS pokemon_name, COUNT(DISTINCT lm.Learns) AS move_count
+	FROM Pokemon p
+	JOIN Learnable_Moves lm ON p.Pokemon_ID = lm.Learnt_By
+	JOIN Moves m ON lm.Learns = m.ID
+	WHERE p.First_Type = 1  -- Replace '1' with the actual type ID you want to query
+	AND m.Of_Type = 1      -- Replace '1' with the actual type ID for the move type
+	GROUP BY p.Name
+	HAVING COUNT(DISTINCT lm.Learns) > 10;
+2025-04-08 15:08:04.089 AEST [4006153] ERROR:  column p.pokemon_id does not exist at character 287
+2025-04-08 15:08:04.089 AEST [4006153] STATEMENT:  WITH move_counts AS (
+	    SELECT mt.Name AS move_type, COUNT(DISTINCT m.ID) AS distinct_moves
+	    FROM Moves m
+	    JOIN Types mt ON m.Of_Type = mt.ID
+	    GROUP BY mt.Name
+	)
+	SELECT p.Name AS pokemon_name, COUNT(DISTINCT lm.Learns) AS move_count
+	FROM Pokemon p
+	JOIN Learnable_Moves lm ON p.Pokemon_ID = lm.Learnt_By
+	JOIN Moves m ON lm.Learns = m.ID
+	WHERE p.First_Type = 1  -- Replace '1' with the actual type ID you want to query
+	AND m.Of_Type = 1      -- Replace '1' with the actual type ID for the move type
+	GROUP BY p.Name
+	HAVING COUNT(DISTINCT lm.Learns) > 10;
+2025-04-08 15:10:12.093 AEST [3893672] LOG:  received smart shutdown request
+2025-04-08 15:10:12.095 AEST [3893672] LOG:  received SIGHUP, reloading configuration files
+2025-04-08 15:10:12.095 AEST [3893672] LOG:  background worker "logical replication launcher" (PID 3893679) exited with exit code 1
+2025-04-08 15:10:12.096 AEST [3893673] LOG:  shutting down
+2025-04-08 15:10:12.096 AEST [3893673] LOG:  checkpoint starting: shutdown immediate
+2025-04-08 15:10:12.097 AEST [3893673] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/27867F58, redo lsn=0/27867F58
+2025-04-08 15:10:12.104 AEST [3893672] LOG:  database system is shut down
+2025-04-08 16:29:55.574 AEST [4154363] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-04-08 16:29:55.574 AEST [4154363] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-04-08 16:29:55.576 AEST [4154366] LOG:  database system was shut down at 2025-04-08 15:10:12 AEST
+2025-04-08 16:29:55.579 AEST [4154363] LOG:  database system is ready to accept connections
+2025-04-08 16:30:00.127 AEST [4154396] ERROR:  missing FROM-clause entry for table "p" at character 91
+2025-04-08 16:30:00.127 AEST [4154396] STATEMENT:  SELECT
+	    T.Name AS Type_Name,
+	    COUNT(DISTINCT M.ID) AS Num_Moves,
+	    COUNT(DISTINCT P.ID) AS Num_Pokemon_With_10Plus_Moves
+	FROM
+	    Types T
+	LEFT JOIN Moves M ON M.Of_Type = T.ID
+	LEFT JOIN (
+	    SELECT
+	        P.ID,
+	        P.First_Type,
+	        LM.Learns
+	    FROM
+	        Pokemon P
+	    JOIN Learnable_Moves LM ON P.ID = LM.Learnt_By
+	    JOIN Moves MO ON LM.Learns = MO.ID
+	    WHERE MO.Of_Type = P.First_Type
+	) AS PM ON PM.First_Type = T.ID
+	-- Group by Pokémon to count how many matching moves they have
+	LEFT JOIN (
+	    SELECT
+	        P.First_Type,
+	        P.ID AS Pokemon_ID
+	    FROM
+	        Pokemon P
+	    JOIN Learnable_Moves LM ON P.ID = LM.Learnt_By
+	    JOIN Moves MO ON LM.Learns = MO.ID
+	    WHERE MO.Of_Type = P.First_Type
+	    GROUP BY P.First_Type, P.ID
+	    HAVING COUNT(DISTINCT LM.Learns) > 10
+	) AS Qualified_Pokemon ON Qualified_Pokemon.First_Type = T.ID
+	GROUP BY T.ID, T.Name
+	ORDER BY T.Name;
+2025-04-08 16:30:23.407 AEST [4154396] ERROR:  missing FROM-clause entry for table "p" at character 91
+2025-04-08 16:30:23.407 AEST [4154396] STATEMENT:  SELECT
+	    T.Name AS Type_Name,
+	    COUNT(DISTINCT M.ID) AS Num_Moves,
+	    COUNT(DISTINCT P.ID) AS Num_Pokemon_With_10Plus_Moves
+	FROM
+	    Types T
+	LEFT JOIN Moves M ON M.Of_Type = T.ID
+	LEFT JOIN (
+	    SELECT
+	        P.ID,
+	        P.First_Type,
+	        LM.Learns
+	    FROM
+	        Pokemon P
+	    JOIN Learnable_Moves LM ON P.ID = LM.Learnt_By
+	    JOIN Moves MO ON LM.Learns = MO.ID
+	    WHERE MO.Of_Type = P.First_Type
+	) AS PM ON PM.First_Type = T.ID
+	-- Group by Pokémon to count how many matching moves they have
+	LEFT JOIN (
+	    SELECT
+	        P.First_Type,
+	        P.ID AS Pokemon_ID
+	    FROM
+	        Pokemon P
+	    JOIN Learnable_Moves LM ON P.ID = LM.Learnt_By
+	    JOIN Moves MO ON LM.Learns = MO.ID
+	    WHERE MO.Of_Type = P.First_Type
+	    GROUP BY P.First_Type, P.ID
+	    HAVING COUNT(DISTINCT LM.Learns) > 10
+	) AS Qualified_Pokemon ON Qualified_Pokemon.First_Type = T.ID
+	GROUP BY T.ID, T.Name
+	ORDER BY T.Name;
+2025-04-08 16:30:23.407 AEST [4154396] ERROR:  missing FROM-clause entry for table "p" at character 91
+2025-04-08 16:30:23.407 AEST [4154396] STATEMENT:  SELECT
+	    T.Name AS Type_Name,
+	    COUNT(DISTINCT M.ID) AS Num_Moves,
+	    COUNT(DISTINCT P.ID) AS Num_Pokemon_With_10Plus_Moves
+	FROM
+	    Types T
+	LEFT JOIN Moves M ON M.Of_Type = T.ID
+	LEFT JOIN (
+	    SELECT
+	        P.ID,
+	        P.First_Type,
+	        LM.Learns
+	    FROM
+	        Pokemon P
+	    JOIN Learnable_Moves LM ON P.ID = LM.Learnt_By
+	    JOIN Moves MO ON LM.Learns = MO.ID
+	    WHERE MO.Of_Type = P.First_Type
+	) AS PM ON PM.First_Type = T.ID
+	-- Group by Pokémon to count how many matching moves they have
+	LEFT JOIN (
+	    SELECT
+	        P.First_Type,
+	        P.ID AS Pokemon_ID
+	    FROM
+	        Pokemon P
+	    JOIN Learnable_Moves LM ON P.ID = LM.Learnt_By
+	    JOIN Moves MO ON LM.Learns = MO.ID
+	    WHERE MO.Of_Type = P.First_Type
+	    GROUP BY P.First_Type, P.ID
+	    HAVING COUNT(DISTINCT LM.Learns) > 10
+	) AS Qualified_Pokemon ON Qualified_Pokemon.First_Type = T.ID
+	GROUP BY T.ID, T.Name
+	ORDER BY T.Name;
+2025-04-08 16:30:25.847 AEST [4154396] ERROR:  missing FROM-clause entry for table "p" at character 91
+2025-04-08 16:30:25.847 AEST [4154396] STATEMENT:  SELECT
+	    T.Name AS Type_Name,
+	    COUNT(DISTINCT M.ID) AS Num_Moves,
+	    COUNT(DISTINCT P.ID) AS Num_Pokemon_With_10Plus_Moves
+	FROM
+	    Types T
+	LEFT JOIN Moves M ON M.Of_Type = T.ID
+	LEFT JOIN (
+	    SELECT
+	        P.ID,
+	        P.First_Type,
+	        LM.Learns
+	    FROM
+	        Pokemon P
+	    JOIN Learnable_Moves LM ON P.ID = LM.Learnt_By
+	    JOIN Moves MO ON LM.Learns = MO.ID
+	    WHERE MO.Of_Type = P.First_Type
+	) AS PM ON PM.First_Type = T.ID
+	-- Group by Pokémon to count how many matching moves they have
+	LEFT JOIN (
+	    SELECT
+	        P.First_Type,
+	        P.ID AS Pokemon_ID
+	    FROM
+	        Pokemon P
+	    JOIN Learnable_Moves LM ON P.ID = LM.Learnt_By
+	    JOIN Moves MO ON LM.Learns = MO.ID
+	    WHERE MO.Of_Type = P.First_Type
+	    GROUP BY P.First_Type, P.ID
+	    HAVING COUNT(DISTINCT LM.Learns) > 10
+	) AS Qualified_Pokemon ON Qualified_Pokemon.First_Type = T.ID
+	GROUP BY T.ID, T.Name
+	ORDER BY T.Name;
+2025-04-08 16:34:55.674 AEST [4154364] LOG:  checkpoint starting: time
+2025-04-08 16:34:55.677 AEST [4154364] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/27868078, redo lsn=0/27868020
+2025-04-08 16:36:02.477 AEST [4157628] ERROR:  argument of JOIN/ON must be type boolean, not type pokemon_id at character 69
+2025-04-08 16:36:02.477 AEST [4157628] STATEMENT:  select lm.learnt_by, p.id from pokemon p
+	JOIN learnable_moves lm ON lm.learnt_by, p.id;
+2025-04-08 16:40:17.228 AEST [4154363] LOG:  received smart shutdown request
+2025-04-08 16:40:17.230 AEST [4154363] LOG:  received SIGHUP, reloading configuration files
+2025-04-08 16:40:17.231 AEST [4154363] LOG:  background worker "logical replication launcher" (PID 4154369) exited with exit code 1
+2025-04-08 16:40:17.232 AEST [4154364] LOG:  shutting down
+2025-04-08 16:40:17.233 AEST [4154364] LOG:  checkpoint starting: shutdown immediate
+2025-04-08 16:40:17.235 AEST [4154364] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/27868128, redo lsn=0/27868128
+2025-04-08 16:40:17.241 AEST [4154363] LOG:  database system is shut down
+2025-04-08 21:43:35.685 AEST [554919] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-04-08 21:43:35.685 AEST [554919] LOG:  listening on Unix socket "/localstorage/z5477862/pgsql/data/.s.PGSQL.5432"
+2025-04-08 21:43:35.687 AEST [554923] LOG:  database system was shut down at 2025-04-08 16:40:17 AEST
+2025-04-08 21:43:35.690 AEST [554919] LOG:  database system is ready to accept connections
+2025-04-08 21:48:35.775 AEST [554921] LOG:  checkpoint starting: time
+2025-04-08 21:48:35.778 AEST [554921] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.004 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/27868230, redo lsn=0/278681D8
+2025-04-08 21:49:06.438 AEST [555040] ERROR:  column "moves.name" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-04-08 21:49:06.438 AEST [555040] STATEMENT:  select name, COUNT(DISTINCT name) from moves;
+2025-04-08 21:53:02.670 AEST [568943] ERROR:  table name "lm" specified more than once
+2025-04-08 21:53:02.670 AEST [568943] STATEMENT:  select m.name, p.name from moves m
+	JOIN learnable_moves lm ON lm.learns = m.id
+	JOIN learnable_moves lm ON lm.learnt_by = p.id;
+2025-04-08 21:53:53.158 AEST [568943] ERROR:  column "p.name" must appear in the GROUP BY clause or be used in an aggregate function at character 32
+2025-04-08 21:53:53.158 AEST [568943] STATEMENT:  select COUNT(DISTINCT m.name), p.name from moves m
+	JOIN learnable_moves lm ON lm.learns = m.id
+	JOIN pokemon p ON lm.learnt_by = p.id;
+2025-04-08 21:54:05.050 AEST [568943] ERROR:  column "p.name" must appear in the GROUP BY clause or be used in an aggregate function at character 32
+2025-04-08 21:54:05.050 AEST [568943] STATEMENT:  select COUNT(DISTINCT m.name), p.name from moves m
+	JOIN learnable_moves lm ON lm.learns = m.id
+	JOIN pokemon p ON lm.learnt_by = p.id
+	GROUP BY m.name;
+2025-04-08 21:59:09.008 AEST [568943] ERROR:  column types.names does not exist at character 62
+2025-04-08 21:59:09.008 AEST [568943] HINT:  Perhaps you meant to reference the column "types.name".
+2025-04-08 21:59:09.008 AEST [568943] STATEMENT:  select names from types
+	JOIN pokemon ON pokemon.first_type = types.names;
+2025-04-08 21:59:12.875 AEST [568943] ERROR:  operator does not exist: integer = text at character 60
+2025-04-08 21:59:12.875 AEST [568943] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2025-04-08 21:59:12.875 AEST [568943] STATEMENT:  select names from types
+	JOIN pokemon ON pokemon.first_type = types.name;
+2025-04-08 21:59:23.923 AEST [568943] ERROR:  operator does not exist: integer = text at character 59
+2025-04-08 21:59:23.923 AEST [568943] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2025-04-08 21:59:23.923 AEST [568943] STATEMENT:  select name from types
+	JOIN pokemon ON pokemon.first_type = types.name;
+2025-04-08 21:59:28.389 AEST [568943] ERROR:  column reference "name" is ambiguous at character 8
+2025-04-08 21:59:28.389 AEST [568943] STATEMENT:  select name from types
+	JOIN pokemon ON pokemon.first_type = types.id;
+2025-04-08 21:59:44.919 AEST [568943] ERROR:  column reference "name" is ambiguous at character 8
+2025-04-08 21:59:44.919 AEST [568943] STATEMENT:  select Name from types
+	JOIN pokemon ON pokemon.first_type = types.id;
+2025-04-08 22:02:52.994 AEST [582255] ERROR:  missing FROM-clause entry for table "m" at character 40
+2025-04-08 22:02:52.994 AEST [582255] STATEMENT:  select DISTINCT t.name, COUNT(DISTINCT m.of_type) as of_type from types t
+	JOIN pokemon p on p.first_type = t.id
+	GROUP BY t.name;
+2025-04-08 22:05:54.956 AEST [582255] ERROR:  syntax error at or near ";" at character 138
+2025-04-08 22:05:54.956 AEST [582255] STATEMENT:  select DISTINCT t.name, COUNT(DISTINCT m.of_type) as of_type from types t
+	JOIN pokemon p on p.first_type = t.id
+	JOIN moves m on m.id =  
+	;
+2025-04-08 22:07:26.421 AEST [582255] ERROR:  column "t.name" must appear in the GROUP BY clause or be used in an aggregate function at character 17
+2025-04-08 22:07:26.421 AEST [582255] STATEMENT:  select DISTINCT t.name, COUNT(DISTINCT m.of_type) as of_type from types t
+	JOIN pokemon p on p.first_type = t.id
+	JOIN moves m on p.first_type = m.of_type;
+2025-04-08 22:14:16.913 AEST [582255] ERROR:  column "t.name" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2025-04-08 22:14:16.913 AEST [582255] STATEMENT:  SELECT t.name, COUNT(DISTINCT m.id) AS num_moves, COUNT(DISTINCT p.id) as pokemon
+	FROM types t
+	JOIN moves m ON m.of_type = t.id
+	JOIN pokemon p ON p.first_type = t.id
+	JOIN learnable_moves lm ON lm.learnt_by = p.id
+	;
+2025-04-08 22:14:46.471 AEST [582255] ERROR:  syntax error at or near "=" at character 225
+2025-04-08 22:14:46.471 AEST [582255] STATEMENT:  SELECT t.name, COUNT(DISTINCT m.id) AS num_moves, COUNT(DISTINCT p.id) as pokemon
+	FROM types t
+	JOIN moves m ON m.of_type = t.id
+	JOIN pokemon p ON p.first_type = t.id
+	JOIN learnable_moves lm ON lm.learnt_by = p.id, lm.learns = m.id
+	GROUP BY t.name;
